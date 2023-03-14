@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "queXULc9lxbK2uxQmuWdJ2tEP73dLWp+czL8Sm0TPYcUNKr1aJiKUsRQzonMCX2JYVbxgaSEnUV7gvIQe9NgsQ==",
+  "dgSpecHash": "2BTGTQdB0UPVDZ5slnWq6CFHaGZ1H2mhmnzT5USh52joyQ+Wmdc2NXXiRdhGxDnIMrYD2HJiDq3P5k9Zk6d6og==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Nova pasta\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
+  "projectFilePath": "C:\\Projetos\\Net\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
-    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
-    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+    "C:\\Users\\Kaue\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512"
   ],
   "logs": []
 }

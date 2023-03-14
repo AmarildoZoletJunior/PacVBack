@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amarildojunior_frwk\\Desktop\\Nova pasta\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {}
+    "C:\\Projetos\\Net\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amarildojunior_frwk\\Desktop\\Nova pasta\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
+    "C:\\Projetos\\Net\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Nova pasta\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\Net\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
         "projectName": "Booking.Domain",
-        "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Nova pasta\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
-        "packagesPath": "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Nova pasta\\PacVBack\\Booking.Domain\\Booking.Domain\\obj\\",
+        "projectPath": "C:\\Projetos\\Net\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
+        "packagesPath": "C:\\Users\\Kaue\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\Net\\PacVBack\\Booking.Domain\\Booking.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amarildojunior_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kaue\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,10 +41,6 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "FluentValidation": {
-              "target": "Package",
-              "version": "[11.5.1, )"
-            },
-            "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
               "version": "[11.5.1, )"
             }
