@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "I4/8X0VyCDckgX9wefvpTyhRUNRLVlaeP69p0pJ73+2j8tflBv2obw/xYIJM7dMGkWY9F7vusznADb6VaqE8Fw==",
+  "dgSpecHash": "queXULc9lxbK2uxQmuWdJ2tEP73dLWp+czL8Sm0TPYcUNKr1aJiKUsRQzonMCX2JYVbxgaSEnUV7gvIQe9NgsQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Nova pasta\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
