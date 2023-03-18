@@ -1,0 +1,14 @@
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.Application.deps.json
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.Application.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.Application.pdb
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.csproj.AssemblyReference.cache
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.AssemblyInfoInputs.cache
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.AssemblyInfo.cs
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.csproj.CoreCompileInputs.cache
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\obj\Debug\net6.0\refint\Booking.Application.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.pdb
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\obj\Debug\net6.0\ref\Booking.Application.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.Application.runtimeconfig.json
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.genruntimeconfig.cache

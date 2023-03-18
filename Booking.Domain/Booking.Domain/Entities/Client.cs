@@ -13,5 +13,8 @@ namespace Booking.Domain.Entities
         public PersonInfo PersonType { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+
+        public ICollection<BookingRoom>? Bookings { get; set; }
+
     }
 }

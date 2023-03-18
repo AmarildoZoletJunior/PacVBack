@@ -9,7 +9,11 @@
   <ItemGroup>
     <Folder Include="Enum\" />
     <Folder Include="VO\" />
-    <Folder Include="Validators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.1" />
   </ItemGroup>
 
 </Project>

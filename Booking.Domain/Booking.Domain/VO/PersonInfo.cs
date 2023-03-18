@@ -8,6 +8,8 @@ namespace Booking.Domain.VO
 {
     public class PersonInfo
     {
-
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string DocumentNumber { get; set; }
     }
 }
