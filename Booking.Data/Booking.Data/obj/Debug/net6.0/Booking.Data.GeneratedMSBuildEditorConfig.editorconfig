@@ -8,4 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Booking.Data
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Data\Booking.Data\
+=======
+build_property.ProjectDir = C:\Projetos\Net\PacVBack\Booking.Data\Booking.Data\
+>>>>>>> 39799182e5491aeccacfc5256006c8e285215ea0

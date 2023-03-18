@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "RuX63kSRHbvAiD3bv0QzPmuifa8ulTn9qF0PoFdL8xbATjim/oQBIzDupNCwYuC7GxL0IFJurKneebnAd5Jdqg==",
   "success": true,
   "projectFilePath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
@@ -75,5 +76,11 @@
     "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "nK235SdGRqi3Iw8GcToe4a02huPzS6TnEH4iJW87xx8hoY6yRQqOT6ZReL/N4RH/icMXG2cZh4UPijmkey9foA==",
+  "success": true,
+  "projectFilePath": "C:\\Projetos\\Net\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> 39799182e5491aeccacfc5256006c8e285215ea0
   "logs": []
 }

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj": {}
   },
   "projects": {
@@ -12,9 +13,22 @@
         "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
         "packagesPath": "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Application\\Booking.Application\\obj\\",
+=======
+    "C:\\Projetos\\Net\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj": {}
+  },
+  "projects": {
+    "C:\\Projetos\\Net\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\Net\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
+        "projectName": "Booking.Application",
+        "projectPath": "C:\\Projetos\\Net\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
+        "packagesPath": "C:\\Users\\Kaue\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\Net\\PacVBack\\Booking.Application\\Booking.Application\\obj\\",
+>>>>>>> 39799182e5491aeccacfc5256006c8e285215ea0
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amarildojunior_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kaue\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
