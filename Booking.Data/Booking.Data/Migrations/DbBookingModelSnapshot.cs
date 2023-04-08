@@ -45,7 +45,14 @@ namespace Booking.Data.Migrations
                     b.Property<DateTime>("Start")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ClientId");
+
+                    b.HasIndex("RoomId");
 
                     b.ToTable("Bookings");
                 });
@@ -61,15 +68,12 @@ namespace Booking.Data.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Clients");
                 });
@@ -107,38 +111,57 @@ namespace Booking.Data.Migrations
                     b.ToTable("Rooms");
                 });
 
-            modelBuilder.Entity("BookingRoomClient", b =>
+            modelBuilder.Entity("Booking.Domain.Entities.User", b =>
                 {
-                    b.Property<int>("BookingsId")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("ClientsId")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.HasKey("BookingsId", "ClientsId");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
 
-                    b.HasIndex("ClientsId");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.ToTable("BookingRoomClient");
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("BookingRoomRoom", b =>
+            modelBuilder.Entity("Booking.Domain.Entities.BookingRoom", b =>
                 {
-                    b.Property<int>("BookingsId")
-                        .HasColumnType("int");
+                    b.HasOne("Booking.Domain.Entities.Client", "Client")
+                        .WithMany("Bookings")
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Property<int>("RoomsId")
-                        .HasColumnType("int");
+                    b.HasOne("Booking.Domain.Entities.Room", "Room")
+                        .WithMany("Bookings")
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasKey("BookingsId", "RoomsId");
+                    b.Navigation("Client");
 
-                    b.HasIndex("RoomsId");
-
-                    b.ToTable("BookingRoomRoom");
+                    b.Navigation("Room");
                 });
 
             modelBuilder.Entity("Booking.Domain.Entities.Client", b =>
                 {
+                    b.HasOne("Booking.Domain.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.OwnsOne("Booking.Domain.VO.PersonInfo", "PersonType", b1 =>
                         {
                             b1.Property<int>("ClientId")
@@ -166,36 +189,18 @@ namespace Booking.Data.Migrations
 
                     b.Navigation("PersonType")
                         .IsRequired();
+
+                    b.Navigation("User");
                 });
 
-            modelBuilder.Entity("BookingRoomClient", b =>
+            modelBuilder.Entity("Booking.Domain.Entities.Client", b =>
                 {
-                    b.HasOne("Booking.Domain.Entities.BookingRoom", null)
-                        .WithMany()
-                        .HasForeignKey("BookingsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Booking.Domain.Entities.Client", null)
-                        .WithMany()
-                        .HasForeignKey("ClientsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Bookings");
                 });
 
-            modelBuilder.Entity("BookingRoomRoom", b =>
+            modelBuilder.Entity("Booking.Domain.Entities.Room", b =>
                 {
-                    b.HasOne("Booking.Domain.Entities.BookingRoom", null)
-                        .WithMany()
-                        .HasForeignKey("BookingsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Booking.Domain.Entities.Room", null)
-                        .WithMany()
-                        .HasForeignKey("RoomsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Bookings");
                 });
 #pragma warning restore 612, 618
         }

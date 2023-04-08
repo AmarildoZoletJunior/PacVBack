@@ -1,6 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "42RIuECLLii/V6kklwlxEc13krK1r72ljhM/dk1VmGX6jaWhMUqcU8dDF1j+Q8QxtSVP9vIp/J36pqyBUQA/Jw==",
   "success": true,
   "projectFilePath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
@@ -27,11 +26,12 @@
     "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
-=======
-  "dgSpecHash": "2rDb3nkMFkC/pPJQBECABeEePeoMFzSkYKzWelF6M4h56SSMgyloeOic5C0nqGEUb0GIWXui1zZmke8IJB9cgw==",
-  "success": true,
-  "projectFilePath": "C:\\Projetos\\Net\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
-  "expectedPackageFiles": [],
->>>>>>> 39799182e5491aeccacfc5256006c8e285215ea0
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Application\\Booking.Application\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

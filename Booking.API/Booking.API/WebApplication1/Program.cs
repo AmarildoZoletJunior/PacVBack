@@ -1,6 +1,5 @@
 using Booking.Data;
 using Microsoft.EntityFrameworkCore;
-using System.Data.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -959,27 +959,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kaue\\.nuget\\packages\\": {}
+    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
       "projectName": "Booking.Application",
       "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
       "packagesPath": "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Application\\Booking.Application\\obj\\",
-=======
-      "projectUniqueName": "C:\\Projetos\\Net\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
-      "projectName": "Booking.Application",
-      "projectPath": "C:\\Projetos\\Net\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
-      "packagesPath": "C:\\Users\\Kaue\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Net\\PacVBack\\Booking.Application\\Booking.Application\\obj\\",
->>>>>>> 39799182e5491aeccacfc5256006c8e285215ea0
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kaue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\amarildojunior_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1031,5 +1023,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Application\\Booking.Application\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

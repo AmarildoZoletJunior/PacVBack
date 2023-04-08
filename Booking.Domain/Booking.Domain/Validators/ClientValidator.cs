@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Booking.Domain.Validators
 {
-    public class ClientValidator : AbstractValidator
+    public class ClientValidator
     {
 
     }

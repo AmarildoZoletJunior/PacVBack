@@ -91,3 +91,7 @@ C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.API\Booking
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.API\Booking.API\WebApplication1\bin\Debug\net6.0\Booking.Domain.dll
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.API\Booking.API\WebApplication1\bin\Debug\net6.0\Booking.Data.pdb
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.API\Booking.API\WebApplication1\bin\Debug\net6.0\Booking.Domain.pdb
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.API\Booking.API\WebApplication1\bin\Debug\net6.0\Microsoft.Practices.ServiceLocation.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.API\Booking.API\WebApplication1\bin\Debug\net6.0\XAct.Core.PCL.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.API\Booking.API\WebApplication1\bin\Debug\net6.0\Booking.CrossCutting.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.API\Booking.API\WebApplication1\bin\Debug\net6.0\Booking.CrossCutting.pdb

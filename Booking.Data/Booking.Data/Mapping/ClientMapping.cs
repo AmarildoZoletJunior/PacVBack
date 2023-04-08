@@ -18,8 +18,6 @@ namespace Booking.Data.Mapping
             builder.OwnsOne(x => x.PersonType).Property(x => x.DocumentNumber).IsRequired();
             builder.OwnsOne(x => x.PersonType).Property(x => x.Name).IsRequired();
 
-            builder.Property(x => x.Email).IsRequired();
-            builder.Property(x => x.Password).IsRequired();
             builder.Property(x => x.CreatedAt).IsRequired();
             builder.Property(x => x.Id).IsRequired().ValueGeneratedOnAdd();
 

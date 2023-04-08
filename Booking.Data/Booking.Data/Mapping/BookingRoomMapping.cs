@@ -14,8 +14,8 @@ namespace Booking.Data.Mapping
     {
         public void Configure(EntityTypeBuilder<BookingRoom> builder)
         {
-            builder.HasMany(x => x.Rooms).WithMany(x => x.Bookings);
-            builder.HasMany(x => x.Clients).WithMany(x => x.Bookings);
+            builder.HasOne(x => x.Room).WithMany(x => x.Bookings).HasForeignKey(x => x.RoomId);
+            builder.HasOne(x => x.Client).WithMany(x => x.Bookings).HasForeignKey(x => x.ClientId);
 
             builder.HasKey(x => x.Id);
 

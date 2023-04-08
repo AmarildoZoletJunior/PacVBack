@@ -15,3 +15,5 @@ C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Data\Bookin
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.pdb
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.genruntimeconfig.cache
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Data\Booking.Data\obj\Debug\net6.0\ref\Booking.Data.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.CrossCutting.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.CrossCutting.pdb
