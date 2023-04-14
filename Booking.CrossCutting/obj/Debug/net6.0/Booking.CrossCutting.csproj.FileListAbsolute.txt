@@ -10,3 +10,15 @@ C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.CrossCuttin
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.CrossCutting\obj\Debug\net6.0\refint\Booking.CrossCutting.dll
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.CrossCutting\obj\Debug\net6.0\Booking.CrossCutting.pdb
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\PacVBack\Booking.CrossCutting\obj\Debug\net6.0\ref\Booking.CrossCutting.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.CrossCutting\bin\Debug\net6.0\Booking.CrossCutting.deps.json
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.CrossCutting\bin\Debug\net6.0\Booking.CrossCutting.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.CrossCutting\bin\Debug\net6.0\Booking.CrossCutting.pdb
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.CrossCutting\obj\Debug\net6.0\Booking.CrossCutting.csproj.AssemblyReference.cache
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.CrossCutting\obj\Debug\net6.0\Booking.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.CrossCutting\obj\Debug\net6.0\Booking.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.CrossCutting\obj\Debug\net6.0\Booking.CrossCutting.AssemblyInfo.cs
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.CrossCutting\obj\Debug\net6.0\Booking.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.CrossCutting\obj\Debug\net6.0\Booking.CrossCutting.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.CrossCutting\obj\Debug\net6.0\refint\Booking.CrossCutting.dll
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.CrossCutting\obj\Debug\net6.0\Booking.CrossCutting.pdb
+C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.CrossCutting\obj\Debug\net6.0\ref\Booking.CrossCutting.dll

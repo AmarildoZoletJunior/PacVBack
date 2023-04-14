@@ -1,14 +1,13 @@
-﻿using FluentValidation;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Booking.Domain.Validators
+namespace Booking.Data.UnitOfWork
 {
-    public class ClientValidator
+    public interface IUnitOfWork
     {
-
+        Task CommitAsync();
     }
 }

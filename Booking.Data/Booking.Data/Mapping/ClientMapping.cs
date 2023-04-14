@@ -14,9 +14,12 @@ namespace Booking.Data.Mapping
         public void Configure(EntityTypeBuilder<Client> builder)
         {
 
-            builder.OwnsOne(x => x.PersonType).Property(x => x.Surname).IsRequired();
-            builder.OwnsOne(x => x.PersonType).Property(x => x.DocumentNumber).IsRequired();
-            builder.OwnsOne(x => x.PersonType).Property(x => x.Name).IsRequired();
+            builder.OwnsOne(x => x.PersonType).Property(x => x.Surname).IsRequired().HasColumnName("Surname");
+            builder.OwnsOne(x => x.PersonType).Property(x => x.DocumentNumber).IsRequired().HasColumnName("DocumentNumber");
+            builder.OwnsOne(x => x.PersonType).Property(x => x.Name).IsRequired().HasColumnName("Name");
+            builder.Property(x => x.Email).IsRequired();
+            builder.Property(x => x.Password).IsRequired();
+
 
             builder.Property(x => x.CreatedAt).IsRequired();
             builder.Property(x => x.Id).IsRequired().ValueGeneratedOnAdd();

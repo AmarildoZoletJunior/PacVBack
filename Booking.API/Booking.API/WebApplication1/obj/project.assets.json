@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AutoMapper/12.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.24.0": {
         "type": "package",
         "dependencies": {
@@ -102,6 +118,25 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.10.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -113,7 +148,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -344,6 +379,26 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Primitives": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Configuration.dll": {
             "related": ".xml"
           }
         },
@@ -1298,6 +1353,24 @@
           "lib/portable-win+net45+sl50+wp80/XAct.Core.PCL.dll": {}
         }
       },
+      "Booking.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "Booking.Data": "1.0.0",
+          "Booking.Domain": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.IdentityModel.Tokens": "6.21.0",
+          "System.IdentityModel.Tokens.Jwt": "6.21.0"
+        },
+        "compile": {
+          "bin/placeholder/Booking.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Booking.Application.dll": {}
+        }
+      },
       "Booking.CrossCutting/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1344,6 +1417,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/12.0.1": {
+      "sha512": "hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
+      "type": "package",
+      "path": "automapper/12.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.12.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.dll",
+        "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.24.0": {
       "sha512": "+/qI1j2oU1S4/nvxb2k/wDsol00iGf1AyJX5g3epV7eOpQEP/2xcgh/cxgKMeFgn3U2fmgSiBnQZdkV+l5y0Uw==",
       "type": "package",
@@ -1454,6 +1542,21 @@
         "logo.png"
       ]
     },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.15": {
+      "sha512": "FvMT6e6EzBVeKzEh5vT25LrWtc3HNcnlanbFUli+PIoL8WKuCUOUSpwN7XFJJBLUW3S+QT/xG+Qa6jo+FlM1zg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/6.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.6.0.15.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "sha512": "yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
       "type": "package",
@@ -1479,10 +1582,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1495,6 +1598,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -1504,7 +1608,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -1813,6 +1917,33 @@
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
         "microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration/7.0.0": {
+      "sha512": "tldQUBWt/xeH2K7/hMPPo5g8zuLc3Ro9I5d4o/XrxvxOCA2EZBtW7bCHHTc49fcBtvB8tLAb/Qsmfrq+2SJ4vA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Configuration.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.targets",
+        "lib/net462/Microsoft.Extensions.Configuration.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.xml",
+        "lib/net6.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net6.0/Microsoft.Extensions.Configuration.xml",
+        "lib/net7.0/Microsoft.Extensions.Configuration.dll",
+        "lib/net7.0/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -3877,6 +4008,11 @@
         "xact.core.pcl.nuspec"
       ]
     },
+    "Booking.Application/1.0.0": {
+      "type": "project",
+      "path": "../../../Booking.Application/Booking.Application/Booking.Application.csproj",
+      "msbuildProject": "../../../Booking.Application/Booking.Application/Booking.Application.csproj"
+    },
     "Booking.CrossCutting/1.0.0": {
       "type": "project",
       "path": "../../../Booking.CrossCutting/Booking.CrossCutting.csproj",
@@ -3895,7 +4031,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Booking.Application >= 1.0.0",
       "Booking.Data >= 1.0.0",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.15",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.4",
@@ -3908,11 +4046,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\Booking.API.csproj",
+      "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\Booking.API.csproj",
       "projectName": "Booking.API",
-      "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\Booking.API.csproj",
+      "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\Booking.API.csproj",
       "packagesPath": "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\obj\\",
+      "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amarildojunior_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3929,8 +4067,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj": {
-              "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj"
+            "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj": {
+              "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj"
+            },
+            "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj": {
+              "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj"
             }
           }
         }
@@ -3945,6 +4086,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[6.0.15, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

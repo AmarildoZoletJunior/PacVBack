@@ -68,11 +68,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
+      "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
       "projectName": "Booking.CrossCutting",
-      "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
+      "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
       "packagesPath": "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.CrossCutting\\obj\\",
+      "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.CrossCutting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amarildojunior_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",

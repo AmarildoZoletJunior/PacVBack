@@ -9,6 +9,8 @@ namespace Booking.Domain.Entities
 {
     public class Avaliation : BaseEntity
     {
+        public Client Client { get; set; }
+        public int ClientId { get; set; }
         public int Grade { get; set; }
         public string Description { get; set; }
     }

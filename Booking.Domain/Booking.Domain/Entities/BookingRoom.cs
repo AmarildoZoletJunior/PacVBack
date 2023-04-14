@@ -16,19 +16,7 @@ namespace Booking.Domain.Entities
         public int RoomId { get; set; }
         public Client Client { get; set; }
         public int ClientId { get; set; }
-        public StatusPayment Status { get; set; }
 
 
-        public void UpdateStatus(Booking.Domain.Enum.Action action)
-        {
-            this.Status = (this.Status, action) switch
-            {
-                (StatusPayment.Created, Booking.Domain.Enum.Action.Pay) => StatusPayment.Paid,
-                (StatusPayment.Paid, Booking.Domain.Enum.Action.Refound) => StatusPayment.Refounded,
-                (StatusPayment.Created, Booking.Domain.Enum.Action.Cancel) => StatusPayment.Canceled,
-                (StatusPayment.Paid, Booking.Domain.Enum.Action.Finish) => StatusPayment.Finished,
-                _ => this.Status
-            };
-        }
     }
 }

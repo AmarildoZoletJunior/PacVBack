@@ -10,7 +10,9 @@ namespace Booking.Domain.Ports
 {
     public interface IClientRepository : IBaseRepository<Client>
     {
-        Task<Client> GetClientByCPF(string CPF);
-        Task<bool> ClientExist(int id);
+        Task<bool> EmailIsUsed(string email);
+        Task<bool> DocumentNumberIsUsed(string documentNumber);
+        Task<int> AccountIsValid(string email,string password);
+
     }
 }

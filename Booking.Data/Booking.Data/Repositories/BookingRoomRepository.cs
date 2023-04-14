@@ -1,14 +1,8 @@
-﻿using Booking.CrossCutting.Helper;
-using Booking.Data.Repositories.RepositoryBase;
+﻿using Booking.Data.Repositories.RepositoryBase;
 using Booking.Domain.Entities;
 using Booking.Domain.Ports;
 using Booking.Domain.Ports.RepositoryGeneric;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Booking.Data.Repositories
 {

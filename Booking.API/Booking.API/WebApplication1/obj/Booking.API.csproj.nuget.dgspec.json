@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\Booking.API.csproj": {}
+    "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\Booking.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\Booking.API.csproj": {
+    "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\Booking.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\Booking.API.csproj",
+        "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\Booking.API.csproj",
         "projectName": "Booking.API",
-        "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\Booking.API.csproj",
+        "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\Booking.API.csproj",
         "packagesPath": "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\obj\\",
+        "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.API\\Booking.API\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amarildojunior_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj": {
-                "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj"
+              "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj": {
+                "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj"
+              },
+              "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj": {
+                "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj"
               }
             }
           }
@@ -44,6 +47,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -88,14 +95,100 @@
         }
       }
     },
-    "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj": {
+    "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
-        "projectName": "Booking.CrossCutting",
-        "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
+        "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
+        "projectName": "Booking.Application",
+        "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
         "packagesPath": "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.CrossCutting\\obj\\",
+        "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Application\\Booking.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\amarildojunior_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj": {
+                "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj"
+              },
+              "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
+                "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.21.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.21.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
+        "projectName": "Booking.CrossCutting",
+        "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amarildojunior_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -149,14 +242,14 @@
         }
       }
     },
-    "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj": {
+    "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
+        "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
         "projectName": "Booking.Data",
-        "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
+        "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
         "packagesPath": "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Data\\Booking.Data\\obj\\",
+        "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amarildojunior_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -173,8 +266,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
-                "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj"
+              "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
+                "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj"
               }
             }
           }
@@ -230,14 +323,14 @@
         }
       }
     },
-    "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
+    "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
         "projectName": "Booking.Domain",
-        "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
+        "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
         "packagesPath": "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Domain\\Booking.Domain\\obj\\",
+        "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Domain\\Booking.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amarildojunior_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -254,8 +347,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj": {
-                "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj"
+              "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj": {
+                "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj"
               }
             }
           }

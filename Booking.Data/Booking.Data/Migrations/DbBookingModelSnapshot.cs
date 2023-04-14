@@ -45,9 +45,6 @@ namespace Booking.Data.Migrations
                     b.Property<DateTime>("Start")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("ClientId");
@@ -68,14 +65,47 @@ namespace Booking.Data.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
-
                     b.ToTable("Clients");
+                });
+
+            modelBuilder.Entity("Booking.Domain.Entities.Payment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BookingRoomId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Type")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Value")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookingRoomId");
+
+                    b.ToTable("Payments");
                 });
 
             modelBuilder.Entity("Booking.Domain.Entities.Room", b =>
@@ -111,30 +141,6 @@ namespace Booking.Data.Migrations
                     b.ToTable("Rooms");
                 });
 
-            modelBuilder.Entity("Booking.Domain.Entities.User", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Users");
-                });
-
             modelBuilder.Entity("Booking.Domain.Entities.BookingRoom", b =>
                 {
                     b.HasOne("Booking.Domain.Entities.Client", "Client")
@@ -156,12 +162,6 @@ namespace Booking.Data.Migrations
 
             modelBuilder.Entity("Booking.Domain.Entities.Client", b =>
                 {
-                    b.HasOne("Booking.Domain.Entities.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.OwnsOne("Booking.Domain.VO.PersonInfo", "PersonType", b1 =>
                         {
                             b1.Property<int>("ClientId")
@@ -169,15 +169,18 @@ namespace Booking.Data.Migrations
 
                             b1.Property<string>("DocumentNumber")
                                 .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("DocumentNumber");
 
                             b1.Property<string>("Name")
                                 .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Name");
 
                             b1.Property<string>("Surname")
                                 .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Surname");
 
                             b1.HasKey("ClientId");
 
@@ -189,8 +192,17 @@ namespace Booking.Data.Migrations
 
                     b.Navigation("PersonType")
                         .IsRequired();
+                });
 
-                    b.Navigation("User");
+            modelBuilder.Entity("Booking.Domain.Entities.Payment", b =>
+                {
+                    b.HasOne("Booking.Domain.Entities.BookingRoom", "BookingRoom")
+                        .WithMany()
+                        .HasForeignKey("BookingRoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BookingRoom");
                 });
 
             modelBuilder.Entity("Booking.Domain.Entities.Client", b =>

@@ -3676,11 +3676,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
+      "projectUniqueName": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
       "projectName": "Booking.Data",
-      "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
+      "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
       "packagesPath": "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Data\\Booking.Data\\obj\\",
+      "outputPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Data\\Booking.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amarildojunior_frwk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3697,8 +3697,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
-              "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj"
+            "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
+              "projectPath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj"
             }
           }
         }
