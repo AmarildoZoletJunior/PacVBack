@@ -10,13 +10,17 @@ namespace Booking.Application.DTOs.ResponseDTO
     {
         public bool IsValid { get; set; }
         public T Data { get; set; }
-        public List<MessageError> MessagesErrors { get; set; } = new List<MessageError>();  
+        public List<MessageError> MessagesErrors { get; set; } = new List<MessageError>();
 
+        public Response()
+        {
+            this.IsValid = true;
+        }
 
         public void AddMessage(string title, string message)
         {
             this.IsValid = false;
-            if(this.Data != null)
+            if (this.Data != null)
             {
                 this.Data = null;
             }
@@ -25,7 +29,7 @@ namespace Booking.Application.DTOs.ResponseDTO
 
         public void AddData(T data)
         {
-            if(this.MessagesErrors.Count == 0)
+            if (this.MessagesErrors.Count == 0)
             {
                 this.Data = data;
                 this.IsValid = true;

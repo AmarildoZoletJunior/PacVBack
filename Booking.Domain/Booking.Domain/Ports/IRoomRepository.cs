@@ -12,5 +12,7 @@ namespace Booking.Domain.Ports
     {
         Task<IEnumerable<Room>> GetByLevel(int Level);
         Task<bool> RoomExist(int id);
+        Task<bool> RoomNumberIsUsed(int number);
+        void DeleteRoom(Room room);
     }
 }

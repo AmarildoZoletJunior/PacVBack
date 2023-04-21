@@ -11,5 +11,6 @@ namespace Booking.Application.Interfaces
     public interface IClientService
     {
         Task<Response<Client>> CreateClient(Client client);
+        Task<Response<Client>> GetClient(int id);
     }
 }

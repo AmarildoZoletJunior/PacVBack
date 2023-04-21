@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Booking.Application.DTOs.AuthDTO;
 using Booking.Application.DTOs.ClientDTO;
+using Booking.Application.DTOs.RoomDTO;
 using Booking.Domain.Entities;
 using Booking.Domain.VO;
 using System;
@@ -19,6 +20,8 @@ namespace Booking.Application.Mapper
                 .ForMember(x => x.PersonType, map => map.MapFrom(x => new PersonInfo { DocumentNumber = x.DocumentNumber, Surname = x.Surname, Name = x.Name }));
 
             CreateMap<AuthRequest, Client>();
+
+            CreateMap<RoomRequest, Room>();
         }
     }
 }

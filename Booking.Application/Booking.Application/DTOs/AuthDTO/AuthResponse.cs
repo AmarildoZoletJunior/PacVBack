@@ -10,5 +10,6 @@ namespace Booking.Application.DTOs.AuthDTO
     {
         public string Token { get; set; }
         public int ClientId { get; set; }
+        public string ClientName { get; set; }
     }
 }

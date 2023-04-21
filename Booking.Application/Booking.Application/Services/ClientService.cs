@@ -58,5 +58,18 @@ namespace Booking.Application.Services
             response.AddData(client);
             return response;
         }
+
+        public async Task<Response<Client>> GetClient(int id)
+        {
+            var response = new Response<Client>();
+            var result = await _clientRepository.GetById(id);
+            if (result != null)
+            {
+                response.AddData(result);
+                return response;    
+            }
+            response.AddMessage("Cliente não encontrado", $"O cliente com o id:{id} não foi encontrado");
+            return response;
+        }
     }
 }

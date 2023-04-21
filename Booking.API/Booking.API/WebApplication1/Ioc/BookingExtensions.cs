@@ -14,13 +14,23 @@ namespace Booking.API.Ioc
     {
         public static IServiceCollection InjectionsExtensions(this IServiceCollection services,IConfiguration configuration)
         {
+            #region Repositories
             services.AddScoped<IBookingRoomRepository,BookingRoomRepository>();
             services.AddScoped<IRoomRepository, RoomRepository>();
             services.AddScoped<IClientRepository, ClientRepository>();
-            services.AddScoped<ITokenService, TokenService>();
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IClientService, ClientService>();
 
+            #endregion
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            #region Services
+            services.AddScoped<IClientService, ClientService>();
+            services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IRoomService, RoomService>();
+            #endregion
+
+
+            #region jwt
             var key = Encoding.ASCII.GetBytes(configuration["JwtToken"]);
 
 
@@ -79,6 +89,8 @@ namespace Booking.API.Ioc
                 });
 
             });
+
+            #endregion
 
             return services;
         }

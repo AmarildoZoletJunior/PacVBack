@@ -30,7 +30,7 @@ namespace Booking.Data.Repositories.RepositoryBase
 
         public async Task<IEnumerable<T>> GetAll(PagedParameters paged)
         {
-            return await _dbBooking.Set<T>().OrderBy(x => x.Id).Skip((paged.NumberPage - 1) * paged.PageSize).Take(paged.PageSize).ToListAsync();
+            return await _dbBooking.Set<T>().OrderBy(x => x.Id).Skip((paged.PageNumber - 1) * paged.PageSize).Take(paged.PageSize).ToListAsync();
         }
 
         public async Task<T> GetById(int id)
