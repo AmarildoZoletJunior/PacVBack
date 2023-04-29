@@ -177,6 +177,10 @@ namespace Booking.Data.Migrations
                                 .HasColumnType("nvarchar(max)")
                                 .HasColumnName("Name");
 
+                            b1.Property<string>("Phone")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
+
                             b1.Property<string>("Surname")
                                 .IsRequired()
                                 .HasColumnType("nvarchar(max)")

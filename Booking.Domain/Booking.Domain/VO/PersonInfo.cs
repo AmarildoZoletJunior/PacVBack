@@ -11,5 +11,6 @@ namespace Booking.Domain.VO
         public string Name { get; set; }
         public string Surname { get; set; }
         public string DocumentNumber { get; set; }
+        public string Phone { get; set; }
     }
 }
