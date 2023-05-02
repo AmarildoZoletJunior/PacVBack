@@ -12,5 +12,7 @@ namespace Booking.Application.Interfaces
     {
         Task<Response<Client>> CreateClient(Client client);
         Task<Response<Client>> GetClient(int id);
+        Task<Response<Client>> UpdateClientInfo(Client client);
+        Task<Response<Client>> UpdatePassword(Client client);
     }
 }

@@ -2,6 +2,7 @@
 using Booking.Application.Interfaces;
 using Booking.Application.Validators;
 using Booking.CrossCutting.Helper;
+using Booking.Data.Repositories;
 using Booking.Data.UnitOfWork;
 using Booking.Domain.Entities;
 using Booking.Domain.Ports;
@@ -85,5 +86,23 @@ namespace Booking.Application.Services
             return response;
         }
 
+        public async Task<Response<Room>> UpdateRoom(Room room)
+        {
+            var response = new Response<Room>();
+            var findRoom = await _roomRepository.GetById(room.Id);
+            if (findRoom == null)
+            {
+                response.AddMessage("Quarto não encontrado", $"O Quarto com id: {room.Id} não foi encontrado");
+                return response;
+            };
+            findRoom.Number = room.Number;
+            findRoom.Description = room.Description;
+            findRoom.Level = room.Level;
+            findRoom.Name = room.Name;
+            _roomRepository.Update(findRoom);
+            await _unitOfWork.CommitAsync();
+            response.AddData(findRoom);
+            return response;
+        }
     }
 }

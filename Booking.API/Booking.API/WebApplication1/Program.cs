@@ -13,12 +13,15 @@ builder.Services.AddControllers();
 
 builder.Services.InjectionsExtensions(builder.Configuration);
 
-var configurationDTO = new MapperConfiguration(x => x.AddProfile(new MapperToDTO()));
-var configurationEntity = new MapperConfiguration(x => x.AddProfile(new MapperToEntity()));
+IEnumerable<Profile> profiles = new List<Profile>
+        {
+           new MapperToEntity(),
+           new MapperToDTO()
+        };
+
+var configurationDTO = new MapperConfiguration(x => x.AddProfiles(profiles));
 IMapper mapperEntity = configurationDTO.CreateMapper();
-IMapper mapperDto = configurationEntity.CreateMapper();
 builder.Services.AddSingleton(mapperEntity);
-builder.Services.AddSingleton(mapperDto);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -71,5 +71,38 @@ namespace Booking.Application.Services
             response.AddMessage("Cliente não encontrado", $"O cliente com o id:{id} não foi encontrado");
             return response;
         }
+
+        public async Task<Response<Client>> UpdateClientInfo(Client client)
+        {
+            var response = new Response<Client>();
+            var findClient = await _clientRepository.GetById(client.Id);
+            if(findClient == null)
+            {
+                response.AddMessage("Client não encontrado", $"O cliente com id: {client.Id} não foi encontrado");
+                return response;
+            }
+            findClient.PersonType.Surname = client.PersonType.Surname;
+            findClient.PersonType.Name = client.PersonType.Name;
+            _clientRepository.Update(findClient);
+            await _unitOfWork.CommitAsync();
+            response.AddData(findClient);
+            return response;
+        }
+
+        public async Task<Response<Client>> UpdatePassword(Client client)
+        {
+            var response = new Response<Client>();
+            var findClient = await _clientRepository.GetById(client.Id);
+            if (findClient == null)
+            {
+                response.AddMessage("Client não encontrado", $"O cliente com id: {client.Id} não foi encontrado");
+                return response;
+            }
+            findClient.Password = CryptoHelper.EncryptPassword(client.Password);
+            _clientRepository.Update(findClient);
+            await _unitOfWork.CommitAsync();
+            response.AddData(findClient);
+            return response;
+        }
     }
 }

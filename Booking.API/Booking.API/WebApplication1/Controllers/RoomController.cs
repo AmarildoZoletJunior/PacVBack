@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using Booking.Application.DTOs.ClientDTO;
 using Booking.Application.DTOs.RoomDTO;
 using Booking.Application.Interfaces;
+using Booking.Application.Services;
 using Booking.CrossCutting.Helper;
 using Booking.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
@@ -23,7 +25,6 @@ namespace Booking.API.Controllers
             _mapper = mapper;
         }
 
-        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreateRoom([Required] RoomRequest room)
         {
@@ -36,19 +37,18 @@ namespace Booking.API.Controllers
             return BadRequest(find.MessagesErrors);
         }
 
-        [Authorize]
         [HttpGet("/Room/{id:int}")]
         public async Task<IActionResult> GetRoom([Required] int id)
         {
             var find = await _roomService.GetRoomAsync(id);
             if (find.IsValid)
             {
-                return Ok(find.Data);
+                var map = _mapper.Map<RoomResponse>(find.Data);
+                return Ok(map);
             }
             return BadRequest(find.MessagesErrors);
         }
 
-        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetRooms([FromQuery] PagedParameters paged)
         {
@@ -69,6 +69,19 @@ namespace Booking.API.Controllers
                 return NoContent();
             }
             return BadRequest(find.MessagesErrors);
+        }
+
+
+        [HttpPut("/Room")]
+        public async Task<IActionResult> UpdateRoom(RoomUpdateRequest request)
+        {
+            var map = _mapper.Map<Room>(request);
+            var result = await _roomService.UpdateRoom(map);
+            if (result.IsValid)
+            {
+                return NoContent();
+            }
+            return BadRequest(result.MessagesErrors);
         }
     }
 }

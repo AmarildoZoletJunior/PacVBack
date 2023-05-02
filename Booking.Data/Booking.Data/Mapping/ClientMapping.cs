@@ -19,6 +19,7 @@ namespace Booking.Data.Mapping
             builder.OwnsOne(x => x.PersonType).Property(x => x.Name).IsRequired().HasColumnName("Name");
             builder.Property(x => x.Email).IsRequired();
             builder.Property(x => x.Password).IsRequired();
+            builder.OwnsOne(x => x.PersonType).Property(x => x.Phone).IsRequired().HasColumnName("Phone");
 
 
             builder.Property(x => x.CreatedAt).IsRequired();

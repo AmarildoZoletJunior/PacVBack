@@ -22,6 +22,39 @@ namespace Booking.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Booking.Domain.Entities.Avaliation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ClientId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Grade")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoomId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClientId");
+
+                    b.HasIndex("RoomId");
+
+                    b.ToTable("Avaliations");
+                });
+
             modelBuilder.Entity("Booking.Domain.Entities.BookingRoom", b =>
                 {
                     b.Property<int>("Id")
@@ -141,6 +174,25 @@ namespace Booking.Data.Migrations
                     b.ToTable("Rooms");
                 });
 
+            modelBuilder.Entity("Booking.Domain.Entities.Avaliation", b =>
+                {
+                    b.HasOne("Booking.Domain.Entities.Client", "Client")
+                        .WithMany()
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Booking.Domain.Entities.Room", "Room")
+                        .WithMany()
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Client");
+
+                    b.Navigation("Room");
+                });
+
             modelBuilder.Entity("Booking.Domain.Entities.BookingRoom", b =>
                 {
                     b.HasOne("Booking.Domain.Entities.Client", "Client")
@@ -179,7 +231,8 @@ namespace Booking.Data.Migrations
 
                             b1.Property<string>("Phone")
                                 .IsRequired()
-                                .HasColumnType("nvarchar(max)");
+                                .HasColumnType("nvarchar(max)")
+                                .HasColumnName("Phone");
 
                             b1.Property<string>("Surname")
                                 .IsRequired()

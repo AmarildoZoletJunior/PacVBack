@@ -14,7 +14,7 @@ namespace Booking.Application.Interfaces
         Task<Response<Room>> GetRoomAsync(int roomId);
         Task<Response<IEnumerable<Room>>> GetRooms(PagedParameters paged);
         Task<Response<Room>> CreateRoom(Room room);
-
+        Task<Response<Room>> UpdateRoom(Room room);
         Task<Response<Room>> DeleteRoom(int id);
     }
 }

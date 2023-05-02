@@ -17,11 +17,17 @@ namespace Booking.Application.Mapper
         public MapperToEntity() 
         {
             CreateMap<ClientRequest, Client>()
-                .ForMember(x => x.PersonType, map => map.MapFrom(x => new PersonInfo { DocumentNumber = x.DocumentNumber, Surname = x.Surname, Name = x.Name }));
+                .ForMember(x => x.PersonType, map => map.MapFrom(x => new PersonInfo { DocumentNumber = x.DocumentNumber, Surname = x.Surname, Name = x.Name, Phone = x.Phone }));
+
+            CreateMap<ClientUpdateRequest, Client>()
+                .ForMember(x => x.PersonType, map => map.MapFrom(x => new PersonInfo { DocumentNumber = "123", Surname = x.Surname, Name = x.Name, Phone = "123" }));
+
+            CreateMap<ClientPasswordRequest, Client>();
 
             CreateMap<AuthRequest, Client>();
 
             CreateMap<RoomRequest, Room>();
+            CreateMap<RoomUpdateRequest, Room>();
         }
     }
 }
