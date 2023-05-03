@@ -70,13 +70,15 @@ namespace Booking.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("End")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime2")
+                        .HasColumnName("EndDate");
 
                     b.Property<int>("RoomId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Start")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime2")
+                        .HasColumnName("StartDate");
 
                     b.HasKey("Id");
 

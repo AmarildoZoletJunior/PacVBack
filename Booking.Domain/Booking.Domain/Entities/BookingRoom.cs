@@ -1,10 +1,4 @@
 ﻿using Booking.Domain.Entities.Base;
-using Booking.Domain.Enum;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Booking.Domain.Entities
 {
@@ -16,7 +10,5 @@ namespace Booking.Domain.Entities
         public int RoomId { get; set; }
         public Client Client { get; set; }
         public int ClientId { get; set; }
-
-
     }
 }

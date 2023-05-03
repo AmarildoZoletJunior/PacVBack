@@ -27,6 +27,7 @@ namespace Booking.API.Ioc
             services.AddScoped<IClientService, ClientService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IRoomService, RoomService>();
+            services.AddScoped<IBookingRoomService, BookingRoomService>();
             #endregion
 
 

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<DbBooking>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("Database")));
+builder.Services.AddDbContext<DbBooking>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("Database")).UseLoggerFactory(LoggerFactory.Create(builder => { })));
 builder.Services.AddControllers();
 
 

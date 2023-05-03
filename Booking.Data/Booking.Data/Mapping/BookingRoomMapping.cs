@@ -21,9 +21,9 @@ namespace Booking.Data.Mapping
 
 
             builder.Property(x => x.Id).ValueGeneratedOnAdd().IsRequired();
-            builder.Property(x => x.Start).IsRequired();
+            builder.Property(x => x.Start).IsRequired().HasColumnName("StartDate");
             builder.Property(x => x.ClientId).IsRequired();
-            builder.Property(x => x.End).IsRequired();
+            builder.Property(x => x.End).IsRequired().HasColumnName("EndDate");
             builder.Property(x => x.RoomId).IsRequired();
             builder.Property(x => x.CreatedAt).IsRequired();
         }

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Booking.Application.DTOs.AuthDTO;
+using Booking.Application.DTOs.BookingRoomDTO;
 using Booking.Application.DTOs.ClientDTO;
 using Booking.Application.DTOs.RoomDTO;
 using Booking.Domain.Entities;
@@ -28,6 +29,8 @@ namespace Booking.Application.Mapper
 
             CreateMap<RoomRequest, Room>();
             CreateMap<RoomUpdateRequest, Room>();
+
+            CreateMap<BookingRoomRequest, BookingRoom>();
         }
     }
 }

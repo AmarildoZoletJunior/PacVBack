@@ -27,6 +27,8 @@ namespace Booking.Application.Services
             this._unitOfWork = unit;
         }
 
+
+
         public async Task<Response<Avaliation>> CreateAvaliation(Avaliation avaliation)
         {
             var response = new Response<Avaliation>();
@@ -53,6 +55,7 @@ namespace Booking.Application.Services
             return response;
 
         }
+
 
         public async Task<Response<IEnumerable<Avaliation>>> GetAvaliationsByRoomId(int id)
         {

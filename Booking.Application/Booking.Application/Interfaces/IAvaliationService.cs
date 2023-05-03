@@ -12,6 +12,5 @@ namespace Booking.Application.Interfaces
     {
         Task<Response<IEnumerable<Avaliation>>> GetAvaliationsByRoomId(int id);
         Task<Response<Avaliation>> CreateAvaliation(Avaliation avaliation);
-
     }
 }
