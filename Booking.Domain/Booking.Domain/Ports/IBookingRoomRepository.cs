@@ -7,5 +7,6 @@ namespace Booking.Domain.Ports
     {
         Task<bool> BookingRoomExist(int id);
         Task<IEnumerable<BookingRoom>> GetBookingRoomsByCheckInAndCheckOut(BookingRoom room);
+        Task<IEnumerable<BookingRoom>> GetBookingForRoomId(int roomId);
     }
 }

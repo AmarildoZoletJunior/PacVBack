@@ -13,6 +13,5 @@ namespace Booking.Application.DTOs.BookingRoomDTO
         public DateTime End { get; set; }
         public int RoomId { get; set; }
         public int ClientId { get; set; }
-        public int StatusPermission { get; set; }
     }
 }

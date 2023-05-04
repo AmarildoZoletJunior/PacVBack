@@ -20,6 +20,12 @@ namespace Booking.Data.Repositories
             return true;
         }
 
+        public async Task<IEnumerable<BookingRoom>> GetBookingForRoomId(int roomId)
+        {
+            var result = await _dbBooking.Bookings.Where(x => x.RoomId == roomId && x.Start > DateTime.Now).ToListAsync();
+            return result;
+        }
+
         public async Task<IEnumerable<BookingRoom>> GetBookingRoomsByCheckInAndCheckOut(BookingRoom room)
         {
             var result = await _dbBooking.Bookings.Where(x => x.RoomId == room.RoomId && (
