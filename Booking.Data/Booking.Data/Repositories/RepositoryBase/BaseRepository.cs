@@ -23,24 +23,19 @@ namespace Booking.Data.Repositories.RepositoryBase
             await _dbBooking.Set<T>().AddAsync(t);
         }
 
-        public void Delete(T t)
-        {
-            _dbBooking.Set<T>().Remove(t);
-        }
-
-        public async Task<IEnumerable<T>> GetAll(PagedParameters paged)
+        public async Task<IEnumerable<T>> GetAllPaged(PagedParameters paged)
         {
             return await _dbBooking.Set<T>().OrderBy(x => x.Id).Skip((paged.PageNumber - 1) * paged.PageSize).Take(paged.PageSize).ToListAsync();
+        }
+
+        public async Task<IEnumerable<T>> GetAll()
+        {
+            return await _dbBooking.Set<T>().ToListAsync();
         }
 
         public async Task<T> GetById(int id)
         {
             return await _dbBooking.Set<T>().FirstOrDefaultAsync(x => x.Id == id);
-        }
-
-        public void Update(T t)
-        {
-            _dbBooking.Set<T>().Update(t);
         }
     }
 }

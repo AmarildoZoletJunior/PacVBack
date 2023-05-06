@@ -16,5 +16,6 @@ namespace Booking.Application.Interfaces
         Task<Response<Room>> CreateRoom(Room room);
         Task<Response<Room>> UpdateRoom(Room room);
         Task<Response<Room>> DeleteRoom(int id);
+        Task<Response<IEnumerable<Room>>> GetRoomsAvailable(PagedParameters paged);
     }
 }

@@ -1,4 +1,6 @@
-﻿using Booking.Data.Repositories.RepositoryBase;
+﻿using Azure;
+using Booking.CrossCutting.Helper;
+using Booking.Data.Repositories.RepositoryBase;
 using Booking.Domain.Entities;
 using Booking.Domain.Ports;
 using Booking.Domain.Ports.RepositoryGeneric;
@@ -20,7 +22,10 @@ namespace Booking.Data.Repositories
             return await _dbBooking.Rooms.Where(x => x.Level == Level).ToListAsync();
         }
 
-
+        public async Task<IEnumerable<Room>> GetRoomsAvailable(PagedParameters paged)
+        {
+            return await _dbBooking.Rooms.Where(x => x.Available == true).OrderBy(x => x.Id).Skip((paged.PageNumber - 1) * paged.PageSize).Take(paged.PageSize).ToListAsync();
+        }
 
         public async Task<bool> RoomExist(int id)
         {
@@ -40,6 +45,11 @@ namespace Booking.Data.Repositories
                 return false;
             }
             return true;
+        }
+
+        public void Update(Room room)
+        {
+            _dbBooking.Rooms.Update(room); 
         }
     }
 }

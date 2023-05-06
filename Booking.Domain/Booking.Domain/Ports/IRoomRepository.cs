@@ -1,4 +1,5 @@
-﻿using Booking.Domain.Entities;
+﻿using Booking.CrossCutting.Helper;
+using Booking.Domain.Entities;
 using Booking.Domain.Ports.RepositoryGeneric;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,9 @@ namespace Booking.Domain.Ports
     {
         Task<IEnumerable<Room>> GetByLevel(int Level);
         Task<bool> RoomExist(int id);
+        Task<IEnumerable<Room>> GetRoomsAvailable(PagedParameters paged);
         Task<bool> RoomNumberIsUsed(int number);
         void DeleteRoom(Room room);
+        void Update(Room room);
     }
 }

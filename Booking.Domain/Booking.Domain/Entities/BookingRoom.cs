@@ -10,5 +10,6 @@ namespace Booking.Domain.Entities
         public int RoomId { get; set; }
         public Client Client { get; set; }
         public int ClientId { get; set; }
+        public Avaliation Avaliation { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace Booking.Domain.Ports
         Task<bool> EmailIsUsed(string email);
         Task<bool> DocumentNumberIsUsed(string documentNumber);
         Task<int> AccountIsValid(string email,string password);
+        void Update(Client client);
 
     }
 }

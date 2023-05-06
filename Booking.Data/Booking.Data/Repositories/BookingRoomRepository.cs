@@ -35,5 +35,17 @@ namespace Booking.Data.Repositories
             (x.Start < room.Start) && (x.End > room.End))).ToListAsync();
             return result;
         }
+
+        public async Task<IEnumerable<BookingRoom>> GetBookingsForClientId(int clientId)
+        {
+            var result = await _dbBooking.Bookings.Where(x => x.ClientId == clientId).ToListAsync();
+           return result;
+        }
+        
+        public async Task<IEnumerable<BookingRoom>> GetBookingsByClientIdAndRoomId(int clientId, int roomId)
+        {
+            var result = await _dbBooking.Bookings.Where(x => x.ClientId == clientId && x.RoomId == roomId).ToListAsync();
+            return result;
+        }
     }
 }

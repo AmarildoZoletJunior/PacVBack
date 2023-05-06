@@ -30,6 +30,9 @@ namespace Booking.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("BookingRoomId")
+                        .HasColumnType("int");
+
                     b.Property<int>("ClientId")
                         .HasColumnType("int");
 
@@ -47,6 +50,9 @@ namespace Booking.Data.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BookingRoomId")
+                        .IsUnique();
 
                     b.HasIndex("ClientId");
 
@@ -178,6 +184,12 @@ namespace Booking.Data.Migrations
 
             modelBuilder.Entity("Booking.Domain.Entities.Avaliation", b =>
                 {
+                    b.HasOne("Booking.Domain.Entities.BookingRoom", "BookingRoom")
+                        .WithOne("Avaliation")
+                        .HasForeignKey("Booking.Domain.Entities.Avaliation", "BookingRoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Booking.Domain.Entities.Client", "Client")
                         .WithMany()
                         .HasForeignKey("ClientId")
@@ -189,6 +201,8 @@ namespace Booking.Data.Migrations
                         .HasForeignKey("RoomId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("BookingRoom");
 
                     b.Navigation("Client");
 
@@ -262,6 +276,12 @@ namespace Booking.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("BookingRoom");
+                });
+
+            modelBuilder.Entity("Booking.Domain.Entities.BookingRoom", b =>
+                {
+                    b.Navigation("Avaliation")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Booking.Domain.Entities.Client", b =>

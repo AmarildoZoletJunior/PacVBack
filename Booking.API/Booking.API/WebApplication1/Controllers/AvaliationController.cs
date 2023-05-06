@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 
 namespace Booking.API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    //[Route("api/[controller]")]
+    //[ApiController]
     public class AvaliationController : ControllerBase
     {
         private readonly IAvaliationService _avaliationService;

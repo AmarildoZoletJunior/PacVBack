@@ -63,10 +63,11 @@ namespace Booking.Application.Services
         public async Task<Response<IEnumerable<Room>>> GetRooms(PagedParameters paged)
         {
             var response = new Response<IEnumerable<Room>>();
-            var result =  await _roomRepository.GetAll(paged);
+            var result =  await _roomRepository.GetAllPaged(paged);
             if (result.Any())
             {
                 response.AddData(result);
+                return response;
             }
             response.AddMessage("Lista de quarto não disponivel", "Não foi encontrado nenhum quarto cadastrado");
             return response;
@@ -81,7 +82,7 @@ namespace Booking.Application.Services
                 response.AddMessage("Quarto não encontrado", $"O quarto com id:{id} não foi encontrado");
                 return response;
             }
-            _roomRepository.Delete(find);
+            _roomRepository.DeleteRoom(find);
             await _unitOfWork.CommitAsync();
             return response;
         }
@@ -102,6 +103,19 @@ namespace Booking.Application.Services
             _roomRepository.Update(findRoom);
             await _unitOfWork.CommitAsync();
             response.AddData(findRoom);
+            return response;
+        }
+
+        public async Task<Response<IEnumerable<Room>>> GetRoomsAvailable(PagedParameters paged)
+        {
+            var response = new Response<IEnumerable<Room>>();
+            var result = await _roomRepository.GetRoomsAvailable(paged);
+            if (result.Any())
+            {
+                response.AddData(result);
+                return response;
+            }
+            response.AddMessage("Lista de quarto não disponivel", "Não foi encontrado nenhum quarto cadastrado");
             return response;
         }
     }

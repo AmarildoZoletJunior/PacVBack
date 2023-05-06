@@ -52,5 +52,9 @@ namespace Booking.Data.Repositories
             return true;
         }
 
+        public void Update(Client client)
+        {
+            _dbBooking.Clients.Update(client);
+        }
     }
 }

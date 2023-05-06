@@ -50,12 +50,25 @@ namespace Booking.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetRooms([FromQuery] PagedParameters paged)
+        public async Task<IActionResult> GetRooms([FromQuery]PagedParameters paged)
         {
             var find = await _roomService.GetRooms(paged);
             if (find.IsValid)
             {
-                return Ok(find.Data);
+                var map = _mapper.Map<IEnumerable<RoomResponse>>(find.Data);
+                return Ok(map);
+            }
+            return BadRequest(find.MessagesErrors);
+        }
+
+        [HttpGet("Availables")]
+        public async Task<IActionResult> GetRoomsAvailable([FromQuery] PagedParameters paged)
+        {
+            var find = await _roomService.GetRoomsAvailable(paged);
+            if (find.IsValid)
+            {
+                var map = _mapper.Map<IEnumerable<RoomResponse>>(find.Data);
+                return Ok(map);
             }
             return BadRequest(find.MessagesErrors);
         }
