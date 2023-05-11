@@ -47,7 +47,7 @@ namespace Booking.Application.Services
             return response;
         }
 
-        public async Task<Response<Room>> GetRoomAsync(int roomId)
+        public async Task<Response<Room>> GetRoomById(int roomId)
         {
             var response = new Response<Room>();
             var result = await _roomRepository.GetById(roomId);
@@ -116,6 +116,19 @@ namespace Booking.Application.Services
                 return response;
             }
             response.AddMessage("Lista de quarto não disponivel", "Não foi encontrado nenhum quarto cadastrado");
+            return response;
+        }
+
+        public async Task<Response<Room>> GetRoomWithImages(int id)
+        {
+            var response = new Response<Room>();
+            var result = await _roomRepository.GetRoomWithImages(id);
+            if (result != null)
+            {
+                response.AddData(result);
+                return response;
+            }
+            response.AddMessage("quarto não disponivel", "Não foi encontrado nenhum quarto cadastrado");
             return response;
         }
     }

@@ -10,6 +10,5 @@ namespace Booking.Domain.Ports
 {
     public interface IAvaliationRepository : IBaseRepository<Avaliation>
     {
-        Task<IEnumerable<Avaliation>> GetByRoomId(int id);
     }
 }

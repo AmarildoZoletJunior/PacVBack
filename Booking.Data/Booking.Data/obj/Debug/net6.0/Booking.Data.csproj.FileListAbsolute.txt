@@ -36,3 +36,22 @@ C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.Data\Bo
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.csproj.CopyComplete
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.genruntimeconfig.cache
 C:\Users\amarildojunior_frwk\Desktop\Workspace\.Net\Pac\PacVBack\Booking.Data\Booking.Data\obj\Debug\net6.0\ref\Booking.Data.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.Data.deps.json
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.Data.runtimeconfig.json
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.Data.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.Data.pdb
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.CrossCutting.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.Domain.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.Domain.pdb
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.CrossCutting.pdb
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.csproj.AssemblyReference.cache
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.AssemblyInfoInputs.cache
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.AssemblyInfo.cs
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.csproj.CoreCompileInputs.cache
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.csproj.CopyComplete
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\refint\Booking.Data.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.pdb
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.genruntimeconfig.cache
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\ref\Booking.Data.dll

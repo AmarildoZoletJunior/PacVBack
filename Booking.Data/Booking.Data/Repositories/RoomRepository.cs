@@ -17,14 +17,16 @@ namespace Booking.Data.Repositories
             _dbBooking.Rooms.Remove(room);
         }
 
-        public async Task<IEnumerable<Room>> GetByLevel(int Level)
-        {
-            return await _dbBooking.Rooms.Where(x => x.Level == Level).ToListAsync();
-        }
+        
 
         public async Task<IEnumerable<Room>> GetRoomsAvailable(PagedParameters paged)
         {
-            return await _dbBooking.Rooms.Where(x => x.Available == true).OrderBy(x => x.Id).Skip((paged.PageNumber - 1) * paged.PageSize).Take(paged.PageSize).ToListAsync();
+            return await _dbBooking.Rooms.Include(x => x.Images.Where(x => x.MainImage == true)).Where(x => x.Available == true).Include(x => x.Images.Where(x => x.MainImage == true)).OrderBy(x => x.Id).Skip((paged.PageNumber - 1) * paged.PageSize).Take(paged.PageSize).ToListAsync();
+        }
+
+        public async Task<Room> GetRoomWithImages(int id)
+        {
+            return await _dbBooking.Rooms.Include(x => x.Images.Where(x => x.RoomId == id)).Where(x => x.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task<bool> RoomExist(int id)

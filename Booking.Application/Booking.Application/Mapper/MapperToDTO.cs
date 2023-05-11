@@ -1,12 +1,8 @@
 ﻿using AutoMapper;
 using Booking.Application.DTOs.ClientDTO;
+using Booking.Application.DTOs.ImageDTO;
 using Booking.Application.DTOs.RoomDTO;
 using Booking.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Booking.Application.Mapper
 {
@@ -22,6 +18,10 @@ namespace Booking.Application.Mapper
 
 
             CreateMap<Room, RoomResponse>();
+            CreateMap<Room, RoomResponseWithImage>();
+
+            CreateMap<Image, ImageResponse>();
+
 
         }
     }

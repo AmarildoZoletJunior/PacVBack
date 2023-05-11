@@ -1,0 +1,12 @@
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.CrossCutting\bin\Release\net6.0\Booking.CrossCutting.deps.json
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.CrossCutting\bin\Release\net6.0\Booking.CrossCutting.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.CrossCutting\bin\Release\net6.0\Booking.CrossCutting.pdb
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.CrossCutting\obj\Release\net6.0\Booking.CrossCutting.csproj.AssemblyReference.cache
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.CrossCutting\obj\Release\net6.0\Booking.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.CrossCutting\obj\Release\net6.0\Booking.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.CrossCutting\obj\Release\net6.0\Booking.CrossCutting.AssemblyInfo.cs
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.CrossCutting\obj\Release\net6.0\Booking.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.CrossCutting\obj\Release\net6.0\Booking.CrossCutting.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.CrossCutting\obj\Release\net6.0\refint\Booking.CrossCutting.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.CrossCutting\obj\Release\net6.0\Booking.CrossCutting.pdb
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.CrossCutting\obj\Release\net6.0\ref\Booking.CrossCutting.dll

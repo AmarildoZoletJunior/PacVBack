@@ -17,5 +17,6 @@ namespace Booking.Domain.Entities
         public int BookingRoomId { get; set; }
         public int Grade { get; set; }
         public string Description { get; set; }
+            
     }
 }

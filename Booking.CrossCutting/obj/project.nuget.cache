@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "VGhmDb0IuyOcIuANfFBSJGivyZkWNRzVTUE5o7Pz/+rC8CMnz3SOG5Ff4AZsH+omLV37aBpYgsn/vcDOavG6WQ==",
+  "dgSpecHash": "uGBdZxRNnuyhU4tysYEwN1yI+HVPKuEsyJvPHC2FxhADr70YtUpDzO1pmn6tydX+BBoiQehsi+YD4uKVigyyNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amarildojunior_frwk\\Desktop\\Workspace\\.Net\\Pac\\PacVBack\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
+  "projectFilePath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\commonservicelocator\\1.3.0\\commonservicelocator.1.3.0.nupkg.sha512",
-    "C:\\Users\\amarildojunior_frwk\\.nuget\\packages\\xact.core.pcl\\0.0.5014\\xact.core.pcl.0.0.5014.nupkg.sha512"
+    "C:\\Users\\amjun\\.nuget\\packages\\commonservicelocator\\1.3.0\\commonservicelocator.1.3.0.nupkg.sha512",
+    "C:\\Users\\amjun\\.nuget\\packages\\xact.core.pcl\\0.0.5014\\xact.core.pcl.0.0.5014.nupkg.sha512"
   ],
   "logs": [
     {

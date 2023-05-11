@@ -12,7 +12,8 @@ namespace Booking.Data
         public DbSet<Client> Clients { get; set; }
         public DbSet<BookingRoom> Bookings { get; set; }
         public DbSet<Payment> Payments { get; set; }
-        public DbSet<Avaliation> Avaliations { get; set; }
+        //public DbSet<Avaliation> Avaliations { get; set; }
+        public DbSet<Image> Images { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

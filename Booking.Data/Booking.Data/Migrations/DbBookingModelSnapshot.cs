@@ -17,49 +17,10 @@ namespace Booking.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.4")
+                .HasAnnotation("ProductVersion", "7.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("Booking.Domain.Entities.Avaliation", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("BookingRoomId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ClientId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Grade")
-                        .HasColumnType("int");
-
-                    b.Property<int>("RoomId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BookingRoomId")
-                        .IsUnique();
-
-                    b.HasIndex("ClientId");
-
-                    b.HasIndex("RoomId");
-
-                    b.ToTable("Avaliations");
-                });
 
             modelBuilder.Entity("Booking.Domain.Entities.BookingRoom", b =>
                 {
@@ -117,6 +78,38 @@ namespace Booking.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Clients");
+                });
+
+            modelBuilder.Entity("Booking.Domain.Entities.Image", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("FormatImage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageBase")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("MainImage")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("RoomId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoomId");
+
+                    b.ToTable("Images");
                 });
 
             modelBuilder.Entity("Booking.Domain.Entities.Payment", b =>
@@ -182,33 +175,6 @@ namespace Booking.Data.Migrations
                     b.ToTable("Rooms");
                 });
 
-            modelBuilder.Entity("Booking.Domain.Entities.Avaliation", b =>
-                {
-                    b.HasOne("Booking.Domain.Entities.BookingRoom", "BookingRoom")
-                        .WithOne("Avaliation")
-                        .HasForeignKey("Booking.Domain.Entities.Avaliation", "BookingRoomId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Booking.Domain.Entities.Client", "Client")
-                        .WithMany()
-                        .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Booking.Domain.Entities.Room", "Room")
-                        .WithMany()
-                        .HasForeignKey("RoomId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("BookingRoom");
-
-                    b.Navigation("Client");
-
-                    b.Navigation("Room");
-                });
-
             modelBuilder.Entity("Booking.Domain.Entities.BookingRoom", b =>
                 {
                     b.HasOne("Booking.Domain.Entities.Client", "Client")
@@ -267,6 +233,17 @@ namespace Booking.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Booking.Domain.Entities.Image", b =>
+                {
+                    b.HasOne("Booking.Domain.Entities.Room", "Room")
+                        .WithMany("Images")
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Room");
+                });
+
             modelBuilder.Entity("Booking.Domain.Entities.Payment", b =>
                 {
                     b.HasOne("Booking.Domain.Entities.BookingRoom", "BookingRoom")
@@ -278,12 +255,6 @@ namespace Booking.Data.Migrations
                     b.Navigation("BookingRoom");
                 });
 
-            modelBuilder.Entity("Booking.Domain.Entities.BookingRoom", b =>
-                {
-                    b.Navigation("Avaliation")
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Booking.Domain.Entities.Client", b =>
                 {
                     b.Navigation("Bookings");
@@ -292,6 +263,8 @@ namespace Booking.Data.Migrations
             modelBuilder.Entity("Booking.Domain.Entities.Room", b =>
                 {
                     b.Navigation("Bookings");
+
+                    b.Navigation("Images");
                 });
 #pragma warning restore 612, 618
         }

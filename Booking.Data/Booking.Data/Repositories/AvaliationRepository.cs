@@ -16,9 +16,6 @@ namespace Booking.Data.Repositories
         public AvaliationRepository(DbBooking _dbBooking) : base(_dbBooking) { }
 
 
-        public async Task<IEnumerable<Avaliation>> GetByRoomId(int id)
-        {
-            return await _dbBooking.Avaliations.Where(x => x.RoomId == id).ToListAsync();
-        }
+ 
     }
 }

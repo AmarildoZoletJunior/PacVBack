@@ -1,0 +1,15 @@
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\bin\Release\net6.0\Booking.Domain.deps.json
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\bin\Release\net6.0\Booking.Domain.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\bin\Release\net6.0\Booking.Domain.pdb
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\bin\Release\net6.0\Booking.CrossCutting.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\bin\Release\net6.0\Booking.CrossCutting.pdb
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\obj\Release\net6.0\Booking.Domain.csproj.AssemblyReference.cache
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\obj\Release\net6.0\Booking.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\obj\Release\net6.0\Booking.Domain.AssemblyInfoInputs.cache
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\obj\Release\net6.0\Booking.Domain.AssemblyInfo.cs
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\obj\Release\net6.0\Booking.Domain.csproj.CoreCompileInputs.cache
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\obj\Release\net6.0\Booking.Domain.csproj.CopyComplete
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\obj\Release\net6.0\Booking.Domain.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\obj\Release\net6.0\refint\Booking.Domain.dll
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\obj\Release\net6.0\Booking.Domain.pdb
+C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Domain\Booking.Domain\obj\Release\net6.0\ref\Booking.Domain.dll
