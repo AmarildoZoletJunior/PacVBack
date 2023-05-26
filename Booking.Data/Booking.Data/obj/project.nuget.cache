@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "steVtcMmpcF/RRNq2udyX9ITAvmK9aBmSFN232dfOhYNlIRwNUjhRqg6J/xcezLQeXMN9d+K1RrslsGP8JOJBw==",
+  "dgSpecHash": "1B+K/5tAD4g9vOu3qHDpl/oHv5jYTnM7oisW0gqw+YuVLtNIu0APf7JmNGoRRc9HsigpBIJjqa0RjnVK6foTzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
+  "projectFilePath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amjun\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\amjun\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

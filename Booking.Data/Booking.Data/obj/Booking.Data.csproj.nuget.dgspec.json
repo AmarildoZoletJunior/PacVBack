@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Data\\Booking.Data\\Booking.Data.csproj": {}
+    "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Data\\Booking.Data\\Booking.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj": {
+    "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
+        "projectUniqueName": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
         "projectName": "Booking.CrossCutting",
-        "projectPath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
+        "projectPath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
         "packagesPath": "C:\\Users\\amjun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\obj\\",
+        "outputPath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amjun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Data\\Booking.Data\\Booking.Data.csproj": {
+    "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Data\\Booking.Data\\Booking.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
+        "projectUniqueName": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
         "projectName": "Booking.Data",
-        "projectPath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
+        "projectPath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Data\\Booking.Data\\Booking.Data.csproj",
         "packagesPath": "C:\\Users\\amjun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Data\\Booking.Data\\obj\\",
+        "outputPath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Data\\Booking.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amjun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
-                "projectPath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj"
+              "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
+                "projectPath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj"
               }
             }
           }
@@ -146,14 +146,14 @@
         }
       }
     },
-    "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
+    "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
+        "projectUniqueName": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
         "projectName": "Booking.Domain",
-        "projectPath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
+        "projectPath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Domain\\Booking.Domain\\Booking.Domain.csproj",
         "packagesPath": "C:\\Users\\amjun\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Domain\\Booking.Domain\\obj\\",
+        "outputPath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Domain\\Booking.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\amjun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -170,8 +170,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj": {
-                "projectPath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj"
+              "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj": {
+                "projectPath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj"
               }
             }
           }

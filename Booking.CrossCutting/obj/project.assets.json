@@ -68,11 +68,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
+      "projectUniqueName": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
       "projectName": "Booking.CrossCutting",
-      "projectPath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
+      "projectPath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
       "packagesPath": "C:\\Users\\amjun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\obj\\",
+      "outputPath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amjun\\AppData\\Roaming\\NuGet\\NuGet.Config",

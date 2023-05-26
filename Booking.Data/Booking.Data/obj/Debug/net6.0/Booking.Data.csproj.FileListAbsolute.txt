@@ -55,3 +55,22 @@ C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPa
 C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.pdb
 C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.genruntimeconfig.cache
 C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\ref\Booking.Data.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.Data.deps.json
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.Data.runtimeconfig.json
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.Data.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.Data.pdb
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.CrossCutting.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.Domain.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.Domain.pdb
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\bin\Debug\net6.0\Booking.CrossCutting.pdb
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.csproj.AssemblyReference.cache
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.AssemblyInfoInputs.cache
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.AssemblyInfo.cs
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.csproj.CoreCompileInputs.cache
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.csproj.CopyComplete
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\refint\Booking.Data.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.pdb
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\Booking.Data.genruntimeconfig.cache
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Data\Booking.Data\obj\Debug\net6.0\ref\Booking.Data.dll

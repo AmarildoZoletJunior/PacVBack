@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uGBdZxRNnuyhU4tysYEwN1yI+HVPKuEsyJvPHC2FxhADr70YtUpDzO1pmn6tydX+BBoiQehsi+YD4uKVigyyNQ==",
+  "dgSpecHash": "L0KvbhQe5me4/mZtCZQS5srcInxcpYyE41to8KC1Ftgj2PWrprgQPBTHHTJGjFbuYVEufyHHlY2WJCbdstN99g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
+  "projectFilePath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.CrossCutting\\Booking.CrossCutting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amjun\\.nuget\\packages\\commonservicelocator\\1.3.0\\commonservicelocator.1.3.0.nupkg.sha512",
     "C:\\Users\\amjun\\.nuget\\packages\\xact.core.pcl\\0.0.5014\\xact.core.pcl.0.0.5014.nupkg.sha512"

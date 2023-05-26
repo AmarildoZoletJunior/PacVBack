@@ -54,3 +54,24 @@ C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPa
 C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.pdb
 C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.genruntimeconfig.cache
 C:\Users\amjun\OneDrive\Área de Trabalho\Pasta para Pastas\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\ref\Booking.Application.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.Application.deps.json
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.Application.runtimeconfig.json
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.Application.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.Application.pdb
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.CrossCutting.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.Data.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.Domain.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.Data.pdb
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.Domain.pdb
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\bin\Debug\net6.0\Booking.CrossCutting.pdb
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.csproj.AssemblyReference.cache
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.AssemblyInfoInputs.cache
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.AssemblyInfo.cs
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.csproj.CoreCompileInputs.cache
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.csproj.CopyComplete
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\refint\Booking.Application.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.pdb
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\Booking.Application.genruntimeconfig.cache
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.Application\Booking.Application\obj\Debug\net6.0\ref\Booking.Application.dll

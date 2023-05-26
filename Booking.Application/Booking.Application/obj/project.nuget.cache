@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PZmC/E1ZnQqHeqS+uXcFL6iAOG1rTITcKW5CevG79VqcnrvsHQcEsUjRLBvV1vF9xx0D1926EN2SbunbUtAfJg==",
+  "dgSpecHash": "c4+CAGvBJCXqoFVFWw6OoeAvsjZ1/iZ/uLToinhPMWLbSggdyXTFD4Ig8/YnbhVmf+8y3vwW3vuFSnNB+pMDiA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\amjun\\OneDrive\\Área de Trabalho\\Pasta para Pastas\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
+  "projectFilePath": "D:\\Códigos\\PAC\\PAC V\\TrabalhoPacVBackEnd\\Booking.Application\\Booking.Application\\Booking.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\amjun\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\amjun\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
