@@ -29,7 +29,8 @@ namespace Booking.APIProject.Controllers
             var find = await _roomService.CreateRoom(map);
             if (find.IsValid)
             {
-                return NoContent();
+                var mapRoom = _mapper.Map<RoomResponse>(find.Data);
+                return Ok(mapRoom);
             }
             return BadRequest(find.MessagesErrors);
         }

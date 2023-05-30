@@ -16,7 +16,7 @@ namespace Booking.APIProject.Controllers
         }
 
         [HttpPost("{roomId:int}")]
-        public async Task<IActionResult> PostImage(IFormFile file, int roomId)
+        public async Task<IActionResult> PostImage([FromForm]IFormFile file, int roomId)
         {
          var result = await imageService.PostImage(file, roomId);
             if (result.IsValid)
@@ -27,7 +27,7 @@ namespace Booking.APIProject.Controllers
         }
 
         [HttpPost("ImageMain/{roomId:int}")]
-        public async Task<IActionResult> PostMainImage(IFormFile file, int roomId)
+        public async Task<IActionResult> PostMainImage([FromForm]IFormFile file, int roomId)
         {
             var result = await imageService.UpdateOrPostMainImage(file, roomId);
             if (result.IsValid)

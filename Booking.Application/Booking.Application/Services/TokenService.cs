@@ -28,6 +28,7 @@ namespace Booking.Application.Services
             {
                 return new AuthResponse();
             }
+            var clientResult = await _client.GetById(clientFind);
             
 
             var key = Encoding.ASCII.GetBytes(_configuration["JwtToken"]);
@@ -35,8 +36,8 @@ namespace Booking.Application.Services
             {
                 Subject = new ClaimsIdentity(new Claim[]
                  {
-                     new Claim(ClaimTypes.Name, client.Id.ToString()),
-                      new Claim(ClaimTypes.Name, client.PersonType.Name)
+                     new Claim(ClaimTypes.Name, clientResult.Id.ToString()),
+                      new Claim(ClaimTypes.Name, clientResult.PersonType.Name)
                  }),
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
@@ -48,8 +49,8 @@ namespace Booking.Application.Services
             return new AuthResponse
             {
                 Token = tokenString,
-                ClientId = clientFind,
-                 ClientName = client.PersonType.Name
+                ClientId = clientResult.Id,
+                 ClientName = $"{clientResult.PersonType.Name} {clientResult.PersonType.Surname}" 
             };
         }
     }
