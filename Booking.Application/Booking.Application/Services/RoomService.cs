@@ -50,7 +50,7 @@ namespace Booking.Application.Services
         public async Task<Response<Room>> GetRoomById(int roomId)
         {
             var response = new Response<Room>();
-            var result = await _roomRepository.GetById(roomId);
+            var result = await _roomRepository.GetRoomByIdWithMainImage(roomId);
             if(result != null)
             {
                 response.AddData(result);

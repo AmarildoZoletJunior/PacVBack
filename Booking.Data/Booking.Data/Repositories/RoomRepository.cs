@@ -21,9 +21,8 @@ namespace Booking.Data.Repositories
 
         public async Task<IEnumerable<Room>> GetRoomsAvailable(PagedParameters paged)
         {
-            return await _dbBooking.Rooms.Include(x => x.Images.Where(x => x.MainImage == true)).Where(x => x.Available == true).Include(x => x.Images.Where(x => x.MainImage == true)).OrderBy(x => x.Id).Skip((paged.PageNumber - 1) * paged.PageSize).Take(paged.PageSize).ToListAsync();
+            return await _dbBooking.Rooms.Include(x => x.Images.Where(x => x.MainImage == true)).Where(x => x.Available == true).OrderBy(x => x.Id).Skip((paged.PageNumber - 1) * paged.PageSize).Take(paged.PageSize).ToListAsync();
         }
-
         public async Task<Room> GetRoomWithImages(int id)
         {
             return await _dbBooking.Rooms.Include(x => x.Images.Where(x => x.RoomId == id)).Where(x => x.Id == id).FirstOrDefaultAsync();
@@ -52,6 +51,11 @@ namespace Booking.Data.Repositories
         public void Update(Room room)
         {
             _dbBooking.Rooms.Update(room); 
+        }
+
+        public async Task<Room> GetRoomByIdWithMainImage(int id)
+        {
+            return await _dbBooking.Rooms.Include(x => x.Images.Where(x => x.MainImage == true)).Where(x => x.Id == id).FirstOrDefaultAsync();
         }
     }
 }

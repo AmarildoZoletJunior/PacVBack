@@ -65,7 +65,7 @@ namespace Booking.APIProject.Controllers
             var find = await _roomService.GetRoomById(id);
             if (find.IsValid)
             {
-                var map = _mapper.Map<RoomResponse>(find.Data);
+                var map = _mapper.Map<RoomResponseWithImage>(find.Data);
                 return Ok(map);
             }
             return BadRequest(find.MessagesErrors);

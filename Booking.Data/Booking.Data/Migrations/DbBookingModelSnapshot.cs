@@ -123,13 +123,13 @@ namespace Booking.Data.Migrations
                     b.Property<int>("BookingRoomId")
                         .HasColumnType("int");
 
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Type")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Value")
@@ -138,6 +138,8 @@ namespace Booking.Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("BookingRoomId");
+
+                    b.HasIndex("ClienteId");
 
                     b.ToTable("Payments");
                 });
@@ -252,12 +254,22 @@ namespace Booking.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Booking.Domain.Entities.Client", "Cliente")
+                        .WithMany("Payments")
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("BookingRoom");
+
+                    b.Navigation("Cliente");
                 });
 
             modelBuilder.Entity("Booking.Domain.Entities.Client", b =>
                 {
                     b.Navigation("Bookings");
+
+                    b.Navigation("Payments");
                 });
 
             modelBuilder.Entity("Booking.Domain.Entities.Room", b =>

@@ -12,6 +12,7 @@ namespace Booking.Domain.Ports
     public interface IRoomRepository : IBaseRepository<Room>
     {
         Task<Room> GetRoomWithImages(int id);
+        Task<Room> GetRoomByIdWithMainImage(int id);
         Task<IEnumerable<Room>> GetRoomsAvailable(PagedParameters paged);
         void DeleteRoom(Room room);
         void Update(Room room);

@@ -14,6 +14,7 @@ namespace Booking.Domain.Entities
         public string Password { get; set; }
         public PersonInfo PersonType { get; set; }
         public ICollection<BookingRoom>? Bookings { get; set; }
+        public ICollection<Payment> Payments { get; set; }
 
     }
 }

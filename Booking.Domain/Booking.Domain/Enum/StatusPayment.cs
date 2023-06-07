@@ -8,10 +8,8 @@ namespace Booking.Domain.Enum
 {
     public enum StatusPayment
     {
-        Finished = 1,
-        Created = 2,
-        Canceled = 3,
-        Paid = 4,
-        Refounded = 5
+        Confirmed = 1,
+        Canceled = 2,
+        Processing = 3
     }
 }

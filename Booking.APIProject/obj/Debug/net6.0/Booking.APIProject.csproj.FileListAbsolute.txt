@@ -202,3 +202,7 @@ D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.APIProject\obj\Debug\net6.0\re
 D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.APIProject\obj\Debug\net6.0\Booking.APIProject.pdb
 D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.APIProject\obj\Debug\net6.0\Booking.APIProject.genruntimeconfig.cache
 D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.APIProject\obj\Debug\net6.0\ref\Booking.APIProject.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.APIProject\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.APIProject\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.APIProject\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Códigos\PAC\PAC V\TrabalhoPacVBackEnd\Booking.APIProject\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

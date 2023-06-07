@@ -2,6 +2,7 @@
 using Booking.Application.DTOs.AuthDTO;
 using Booking.Application.DTOs.BookingRoomDTO;
 using Booking.Application.DTOs.ClientDTO;
+using Booking.Application.DTOs.PaymentDTO;
 using Booking.Application.DTOs.RoomDTO;
 using Booking.Domain.Entities;
 using Booking.Domain.VO;
@@ -31,6 +32,7 @@ namespace Booking.Application.Mapper
             CreateMap<RoomUpdateRequest, Room>();
 
             CreateMap<BookingRoomRequest, BookingRoom>();
+            CreateMap<PaymentRequest, Payment>();
         }
     }
 }
