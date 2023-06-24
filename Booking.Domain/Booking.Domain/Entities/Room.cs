@@ -14,6 +14,7 @@ namespace Booking.Domain.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public int Number { get; set; }
+        //public Decimal Value { get; set; }
         public ICollection<BookingRoom>? Bookings { get; set; }
         public ICollection<Image>? Images { get; set; }
     }

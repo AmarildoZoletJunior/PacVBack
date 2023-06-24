@@ -10,5 +10,7 @@ namespace Booking.Domain.Ports
         Task<IEnumerable<BookingRoom>> GetBookingForRoomId(int roomId);
         Task<IEnumerable<BookingRoom>> GetBookingsForClientId(int clientId);
         Task<IEnumerable<BookingRoom>> GetBookingsByClientIdAndRoomId(int clientId, int roomId);
+
+        Task<BookingRoom> GetBookingWithRoomInfo(int bookinId);
     }
 }

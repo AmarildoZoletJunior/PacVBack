@@ -11,5 +11,6 @@ namespace Booking.Application.Interfaces
     public interface ITokenService
     {
         Task<AuthResponse> GenerateTokenAsync(Client client);
+        public string VerifyToken(string token);
     }
 }

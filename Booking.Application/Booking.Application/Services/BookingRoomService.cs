@@ -1,4 +1,5 @@
-﻿using Booking.Application.DTOs.ResponseDTO;
+﻿using Booking.Application.DTOs.BookingRoomDTO;
+using Booking.Application.DTOs.ResponseDTO;
 using Booking.Application.Interfaces;
 using Booking.Application.Validators;
 using Booking.Data;
@@ -41,17 +42,25 @@ namespace Booking.Application.Services
                 response.AddMessage("Quarto não encontrado", $"O quarto com id:{booking.RoomId} não foi encontrado");
                 return response;
             }
-            if(!findRoom.Available)
+
+            if (!findRoom.Available)
             {
                 response.AddMessage("Quarto indisponível", $"O quarto com id:{booking.RoomId} esta indisponível");
                 return response;
             }
             var validBooking = await _bookingRoomRepository.GetBookingRoomsByCheckInAndCheckOut(booking);
-            if(validBooking.Count() > 0)
+            if (validBooking.Count() > 0)
             {
                 response.AddMessage("Quarto já esta alugado", $"O quarto com id:{booking.RoomId} esta alugados entre a data: {booking.Start} e {booking.End}");
                 return response;
             }
+            var clientFind = await _clientRepository.GetById(booking.ClientId);
+            if (clientFind == null)
+            {
+                response.AddMessage("Cliente não encontrado", $"O cliente não foi encontrado");
+                return response;
+            }
+            response.AddData(booking);
             await _bookingRoomRepository.Create(booking);
             await _unitOfWork.CommitAsync();
             return response;
@@ -61,7 +70,7 @@ namespace Booking.Application.Services
         {
             var response = new Response<List<DateTime>>();
             var findRoom = await _roomRepository.GetById(roomId);
-            if(findRoom == null)
+            if (findRoom == null)
             {
                 response.AddMessage("Quarto não encontrado", $"O quarto com id:{roomId} não foi encontrado");
                 return response;
@@ -73,21 +82,34 @@ namespace Booking.Application.Services
                 return response;
             }
             response.Data = new List<DateTime>();
-            foreach ( var booking in listBookings) 
+            foreach (var booking in listBookings)
             {
-               var lista = DateGenerate(booking.Start, booking.End);
-                foreach(var list in lista)
+                var lista = DateGenerate(booking.Start, booking.End);
+                foreach (var list in lista)
                 {
                     response.Data.Add(list);
                 }
             }
             return response;
         }
+
+        public async Task<Response<IEnumerable<BookingRoom>>> listBookingForClient(int clientId)
+        {
+            var response = new Response<IEnumerable<BookingRoom>>();
+            var findBookings = await _bookingRoomRepository.GetBookingsForClientId(clientId);
+            if (findBookings != null)
+            {
+                response.AddData(findBookings);
+                return response;
+            }
+            response.AddMessage("Cliente sem reservas", "O cliente não tem nenhuma reserva cadastrada");
+            return response;
+        }
         public IEnumerable<DateTime> DateGenerate(DateTime initial, DateTime final)
         {
             TimeSpan days = final - initial;
             List<DateTime> list = new List<DateTime>();
-            for(var o = 0;o < days.Days + 1; o++)
+            for (var o = 0; o < days.Days + 1; o++)
             {
                 var day = initial.Day;
                 var year = initial.Year;
@@ -95,6 +117,19 @@ namespace Booking.Application.Services
                 list.Add(new DateTime(year, month, day).AddDays(o).AddHours(12));
             }
             return list;
+        }
+
+        public async Task<Response<BookingRoom>> BookingRoomWithRoomInfo(int bookinId)
+        {
+            var response = new Response<BookingRoom>();
+            var find = await _bookingRoomRepository.GetBookingWithRoomInfo(bookinId);
+            if (find != null)
+            {
+                response.AddData(find);
+                return response;
+            }
+            response.AddMessage("Aluguel não encontrado", "O aluguel não foi encontrado com este Id");
+            return response;
         }
     }
 }

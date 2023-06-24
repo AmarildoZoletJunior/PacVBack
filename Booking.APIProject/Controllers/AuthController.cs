@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
 using Booking.Application.DTOs.AuthDTO;
 using Booking.Application.Interfaces;
+using Booking.Application.Services;
 using Booking.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace Booking.APIProject.Controllers
 {
@@ -30,6 +32,21 @@ namespace Booking.APIProject.Controllers
                 return Ok(result);
             }
             return Unauthorized();
+        }
+
+        [HttpGet("/Validate")]
+        public async Task<IActionResult> ValidateToken([Required]string token)
+        {
+            string isValid = _tokenService.VerifyToken(token);
+
+            if (isValid != "")
+            {
+                return Ok(isValid);
+            }
+            else
+            {
+                return Unauthorized();
+            }
         }
     }
 }

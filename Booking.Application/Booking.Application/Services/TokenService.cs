@@ -5,6 +5,7 @@ using Booking.Domain.Ports;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net.Http;
 using System.Security.Claims;
 using System.Text;
 
@@ -23,21 +24,20 @@ namespace Booking.Application.Services
 
         public async Task<AuthResponse> GenerateTokenAsync(Client client)
         {
-            var clientFind = await _client.AccountIsValid(client.Email,client.Password);
+            var clientFind = await _client.AccountIsValid(client.Email, client.Password);
             if (clientFind == 0)
             {
                 return new AuthResponse();
             }
             var clientResult = await _client.GetById(clientFind);
-            
+
 
             var key = Encoding.ASCII.GetBytes(_configuration["JwtToken"]);
             var tokenConfig = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
                  {
-                     new Claim(ClaimTypes.Name, clientResult.Id.ToString()),
-                      new Claim(ClaimTypes.Name, clientResult.PersonType.Name)
+                     new Claim("IdUsuario", clientResult.Id.ToString())
                  }),
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
@@ -50,8 +50,36 @@ namespace Booking.Application.Services
             {
                 Token = tokenString,
                 ClientId = clientResult.Id,
-                 ClientName = $"{clientResult.PersonType.Name} {clientResult.PersonType.Surname}" 
+                ClientName = $"{clientResult.PersonType.Name} {clientResult.PersonType.Surname}"
             };
         }
+        public string VerifyToken(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler().ReadJwtToken(token);
+            var tokenValidate = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuration["JwtToken"]);
+
+            var validationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                ClockSkew = TimeSpan.Zero
+            };
+            
+
+            try
+            {
+                tokenValidate.ValidateToken(token, validationParameters, out _);
+                var claim = tokenHandler.Claims.FirstOrDefault(x => x.Type == "IdUsuario").Value;
+                return claim; // Token válido
+            }
+            catch (Exception)
+            {
+                return ""; // Token inválido
+            }
+        }
+
     }
 }

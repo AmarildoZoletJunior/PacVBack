@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Booking.Application.DTOs.BookingRoomDTO;
 using Booking.Application.DTOs.ClientDTO;
 using Booking.Application.DTOs.ImageDTO;
 using Booking.Application.DTOs.PaymentDTO;
@@ -25,7 +26,9 @@ namespace Booking.Application.Mapper
 
             CreateMap<Payment, PaymentResponse>();
 
+            CreateMap<BookingRoom, BookingRoomResponse>();
 
+            CreateMap<BookingRoom, BookingRoomResponseWithRoomInfo>();
         }
     }
 }

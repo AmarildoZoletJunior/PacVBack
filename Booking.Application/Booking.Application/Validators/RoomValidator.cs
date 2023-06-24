@@ -13,20 +13,20 @@ namespace Booking.Application.Validators
         public RoomValidator() 
         {
             RuleFor(x => x.Description)
-                .NotEmpty().WithMessage("O campo Description não pode ser nulo.")
-                .NotNull().WithMessage("O campo Description não pode ser vazio.");
+                .NotEmpty().WithMessage("O campo descrição não pode ser nulo.")
+                .NotNull().WithMessage("O campo descrição não pode ser vazio.");
 
             RuleFor(x => x.Name)
-                .NotEmpty().WithMessage("O campo Name não pode ser nulo.")
-                .NotNull().WithMessage("O campo Name não pode ser vazio.");
+                .NotEmpty().WithMessage("O campo nome não pode ser nulo.")
+                .NotNull().WithMessage("O campo nome não pode ser vazio.");
 
             RuleFor(x => x.Level)
-                .NotEmpty().WithMessage("O campo Level não pode ser nulo.")
-                .NotNull().WithMessage("O campo Level não pode ser vazio.");
+                .NotEmpty().WithMessage("O campo andar não pode ser nulo.")
+                .NotNull().WithMessage("O campo andar não pode ser vazio.");
 
             RuleFor(x => x.Number)
-                .NotEmpty().WithMessage("O campo Number não pode ser nulo.")
-                .NotNull().WithMessage("O campo Number não pode ser vazio.");
+                .NotEmpty().WithMessage("O campo número não pode ser nulo.")
+                .NotNull().WithMessage("O campo número não pode ser vazio.");
         }
     }
 }

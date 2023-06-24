@@ -47,5 +47,11 @@ namespace Booking.Data.Repositories
             var result = await _dbBooking.Bookings.Where(x => x.ClientId == clientId && x.RoomId == roomId).ToListAsync();
             return result;
         }
+
+        public async Task<BookingRoom> GetBookingWithRoomInfo(int bookinId)
+        {
+            var result = await _dbBooking.Bookings.Where(x => x.Id == bookinId).Include(x => x.Room).ThenInclude(x => x.Images.Where(x => x.MainImage == true)).FirstOrDefaultAsync();
+            return result;
+        }
     }
 }

@@ -3,9 +3,11 @@ using Booking.Application.DTOs.RoomDTO;
 using Booking.Application.Interfaces;
 using Booking.CrossCutting.Helper;
 using Booking.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
+using XAct.Security;
 
 namespace Booking.APIProject.Controllers
 {
@@ -58,7 +60,7 @@ namespace Booking.APIProject.Controllers
             return BadRequest(result.MessagesErrors);
         }
 
-
+ 
         [HttpGet("/Room/{id:int}")]
         public async Task<IActionResult> GetRoomById([Required] int id)
         {
