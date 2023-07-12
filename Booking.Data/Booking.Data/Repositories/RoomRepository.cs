@@ -57,5 +57,6 @@ namespace Booking.Data.Repositories
         {
             return await _dbBooking.Rooms.Include(x => x.Images.Where(x => x.MainImage == true)).Where(x => x.Id == id).FirstOrDefaultAsync();
         }
+
     }
 }

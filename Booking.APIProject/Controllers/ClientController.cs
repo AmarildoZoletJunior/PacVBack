@@ -2,6 +2,7 @@
 using Booking.Application.DTOs.ClientDTO;
 using Booking.Application.Interfaces;
 using Booking.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
@@ -20,7 +21,6 @@ namespace Booking.APIProject.Controllers
             _clientService = clientService;
             _mapper = mapper;
         }
-
         [HttpPost("/Client")]
         public async Task<IActionResult> CreateClientAsync([Required] ClientRequest client)
         {
@@ -32,7 +32,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(result.MessagesErrors);
         }
-
+        [Authorize]
         [HttpGet("/Client/{id:int}")]
 
         public async Task<IActionResult> GetClient([Required] int id)
@@ -45,7 +45,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(result.MessagesErrors);
         }
-
+        [Authorize]
         [HttpPut("/Client")]
         public async Task<IActionResult> UpdateClientInfo(ClientUpdateRequest request)
         {
@@ -57,7 +57,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(result.MessagesErrors);
         }
-
+        [Authorize]
         [HttpPut("/Client/Password")]
         public async Task<IActionResult> UpdateClientInfo(ClientPasswordRequest request)
         {

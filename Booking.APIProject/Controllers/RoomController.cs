@@ -23,7 +23,7 @@ namespace Booking.APIProject.Controllers
             _roomService = roomService;
             _mapper = mapper;
         }
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreateRoom([Required] RoomRequest room)
         {
@@ -36,7 +36,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(find.MessagesErrors);
         }
-
+        [Authorize]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteRoom([Required] int id)
         {
@@ -47,7 +47,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(find.MessagesErrors);
         }
-
+        [Authorize]
         [HttpPut("/Room")]
         public async Task<IActionResult> UpdateRoom(RoomUpdateRequest request)
         {
@@ -60,7 +60,7 @@ namespace Booking.APIProject.Controllers
             return BadRequest(result.MessagesErrors);
         }
 
- 
+
         [HttpGet("/Room/{id:int}")]
         public async Task<IActionResult> GetRoomById([Required] int id)
         {
@@ -72,7 +72,6 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(find.MessagesErrors);
         }
-
         [HttpGet]
         public async Task<IActionResult> GetRooms([FromQuery] PagedParameters paged)
         {
@@ -84,7 +83,6 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(find.MessagesErrors);
         }
-
         [HttpGet("Availables")]
         public async Task<IActionResult> GetRoomsAvailable([FromQuery] PagedParameters paged)
         {
@@ -96,7 +94,6 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(find.MessagesErrors);
         }
-
         [HttpGet("/Room/Images/{id:int}")]
         public async Task<IActionResult> GetRoomWithImages(int id)
         {
@@ -108,6 +105,16 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(find.MessagesErrors);
         }
-
+        [Authorize]
+        [HttpGet("Available/{id:int}")]
+        public async Task<IActionResult> ActiveOrDesactiveRoom([Required][FromRoute]int id)
+        {
+            var find = await _roomService.ActivateOrDesactivateRoom(id);
+            if (find.IsValid)
+            {
+                return NoContent();
+            }
+            return BadRequest(find.MessagesErrors);
+        }
     }
 }

@@ -3,6 +3,7 @@ using Booking.Application.DTOs.BookingRoomDTO;
 using Booking.Application.DTOs.RoomDTO;
 using Booking.Application.Interfaces;
 using Booking.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
@@ -21,7 +22,7 @@ namespace Booking.APIProject.Controllers
             _mapper = mapper;
             _bookingRoomService = bookingRoomService;
         }
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreateBookingRoom(BookingRoomRequest response)
         {
@@ -34,7 +35,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(result.MessagesErrors);
         }
-
+        [Authorize]
         [HttpGet("client/{clientId:int}")]
         public async Task<IActionResult> ListReservesForClientId([Required] int clientId)
         {
@@ -46,7 +47,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(result.MessagesErrors);
         }
-
+        [Authorize]
         [HttpGet("room/{roomId:int}")]
         public async Task<IActionResult> ListReserves([Required] int roomId)
         {
@@ -57,7 +58,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(result.MessagesErrors);
         }
-
+        [Authorize]
         [HttpGet("room/info/{bookinId:int}")]
         public async Task<IActionResult> ListReserveWithRoomAndBookinInfo([Required] int bookinId)
         {

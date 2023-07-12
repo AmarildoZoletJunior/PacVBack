@@ -15,6 +15,7 @@ namespace Booking.Domain.Entities
         public PersonInfo PersonType { get; set; }
         public ICollection<BookingRoom>? Bookings { get; set; }
         public ICollection<Payment> Payments { get; set; }
+        public bool IsAdmin { get; set; } = false;
 
     }
 }

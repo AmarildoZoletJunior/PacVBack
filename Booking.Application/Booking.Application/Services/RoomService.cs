@@ -6,6 +6,7 @@ using Booking.Data.Repositories;
 using Booking.Data.UnitOfWork;
 using Booking.Domain.Entities;
 using Booking.Domain.Ports;
+using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -130,6 +131,23 @@ namespace Booking.Application.Services
             }
             response.AddMessage("quarto não disponivel", "Não foi encontrado nenhum quarto cadastrado");
             return response;
+        }
+
+        public async Task<Response<Room>> ActivateOrDesactivateRoom(int id)
+        {
+            var response = new Response<Room>();
+            var find = await _roomRepository.GetById(id);
+            if (find == null)
+            {
+                response.AddMessage("Quarto não encontrado", $"O quarto com id:{id} não foi encontrado");
+                return response;
+            }
+            find.Available = !find.Available;
+            _roomRepository.Update(find);
+            await _unitOfWork.CommitAsync();
+            response.AddData(find);
+            return response;
+
         }
     }
 }

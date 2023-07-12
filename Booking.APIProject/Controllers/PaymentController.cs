@@ -2,6 +2,7 @@
 using Booking.Application.DTOs.PaymentDTO;
 using Booking.Application.Interfaces;
 using Booking.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
@@ -20,7 +21,7 @@ namespace Booking.APIProject.Controllers
             _mapper = mapper;
         }
 
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreatePayment([Required] PaymentRequest payment)
         {
@@ -32,7 +33,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(result.MessagesErrors);
         }
-
+        [Authorize]
         [HttpGet("{ClienteId:int}")]
         public async Task<IActionResult> GetAllPaymentsByClientId([Required] int ClientId)
         {
@@ -43,7 +44,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(Payments.MessagesErrors);
         }
-
+        [Authorize]
         [HttpGet("{paymentId:int}")]
         public async Task<IActionResult> GetPaymentById([Required] int paymentId)
         {
@@ -54,7 +55,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(Payments.MessagesErrors);
         }
-
+        [Authorize]
         [HttpGet("{roomId:int}")]
         public async Task<IActionResult> GetPaymentByRoomId([Required] int roomId)
         {
@@ -65,7 +66,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(Payments.MessagesErrors);
         }
-
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAllPayments()
         {
@@ -76,7 +77,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(Payments.MessagesErrors);
         }
-
+        [Authorize]
         [HttpPut("{paymentId:int}")]
         public async Task<IActionResult> PutStatusForPay([Required] int paymentId)
         {
@@ -87,7 +88,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(Payments.MessagesErrors);
         }
-
+        [Authorize]
         [HttpPut("{paymentID:int}")]
         public async Task<IActionResult> PutStatusForCancel([Required] int paymentID)
         {

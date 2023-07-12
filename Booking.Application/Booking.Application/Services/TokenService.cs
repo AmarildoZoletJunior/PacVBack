@@ -37,7 +37,8 @@ namespace Booking.Application.Services
             {
                 Subject = new ClaimsIdentity(new Claim[]
                  {
-                     new Claim("IdUsuario", clientResult.Id.ToString())
+                     new Claim("IdUsuario", clientResult.Id.ToString()),
+                      new Claim("isAdmin", clientResult.IsAdmin.ToString())
                  }),
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
@@ -48,12 +49,50 @@ namespace Booking.Application.Services
 
             return new AuthResponse
             {
+                IsAdmin = clientResult.IsAdmin,
                 Token = tokenString,
                 ClientId = clientResult.Id,
                 ClientName = $"{clientResult.PersonType.Name} {clientResult.PersonType.Surname}"
             };
         }
         public string VerifyToken(string token)
+        {
+            var tokenValidate = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuration["JwtToken"]);
+
+            var validationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                ClockSkew = TimeSpan.Zero
+            };
+
+
+            try
+            {
+                var tokenHandler = new JwtSecurityTokenHandler().ReadJwtToken(token);
+                try
+                {
+                    tokenValidate.ValidateToken(token, validationParameters, out _);
+                    var claim = tokenHandler.Claims.FirstOrDefault(x => x.Type == "IdUsuario").Value;
+                    return claim; // Token válido
+                }
+                catch (Exception)
+                {
+                    return ""; // Token inválido
+                }
+            }
+            catch (Exception ex)
+            {
+                return "";
+            }
+
+
+        }
+
+        public bool VerifyTokenAdmin(string token)
         {
             var tokenHandler = new JwtSecurityTokenHandler().ReadJwtToken(token);
             var tokenValidate = new JwtSecurityTokenHandler();
@@ -67,17 +106,21 @@ namespace Booking.Application.Services
                 ValidateAudience = false,
                 ClockSkew = TimeSpan.Zero
             };
-            
+
 
             try
             {
                 tokenValidate.ValidateToken(token, validationParameters, out _);
-                var claim = tokenHandler.Claims.FirstOrDefault(x => x.Type == "IdUsuario").Value;
-                return claim; // Token válido
+                var claimAdmin = tokenHandler.Claims.FirstOrDefault(x => x.Type == "isAdmin").Value;
+                if(claimAdmin == "True")
+                {
+                    return true;
+                }
+                return false; // Token válido
             }
             catch (Exception)
             {
-                return ""; // Token inválido
+                return false; // Token inválido
             }
         }
 

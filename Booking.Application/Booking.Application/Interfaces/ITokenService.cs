@@ -12,5 +12,6 @@ namespace Booking.Application.Interfaces
     {
         Task<AuthResponse> GenerateTokenAsync(Client client);
         public string VerifyToken(string token);
+        public bool VerifyTokenAdmin(string token);
     }
 }

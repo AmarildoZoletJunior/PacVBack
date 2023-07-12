@@ -14,5 +14,7 @@ namespace Booking.Application.Interfaces
         Task<Response<Room>> UpdateRoom(Room room);
         Task<Response<Room>> DeleteRoom(int id);
 
+        Task<Response<Room>> ActivateOrDesactivateRoom(int id);
+
     }
 }

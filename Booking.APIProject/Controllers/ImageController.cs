@@ -1,4 +1,5 @@
 ﻿using Booking.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,7 +15,7 @@ namespace Booking.APIProject.Controllers
         {
             this.imageService = imageService;
         }
-
+        [Authorize]
         [HttpPost("{roomId:int}")]
         public async Task<IActionResult> PostImage(IFormFile file, int roomId)
         {
@@ -25,7 +26,7 @@ namespace Booking.APIProject.Controllers
             }
             return BadRequest(result.MessagesErrors);
         }
-
+        [Authorize]
         [HttpPost("ImageMain/{roomId:int}")]
         public async Task<IActionResult> PostMainImage(IFormFile file, int roomId)
         {
